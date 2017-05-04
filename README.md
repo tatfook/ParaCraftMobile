@@ -8,7 +8,6 @@
 - [JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - [Ant-1.9.4](http://ant.apache.org/bindownload.cgi) [Download Link](http://archive.apache.org/dist/ant/binaries/)
 - [Python 2.7](https://www.python.org/downloads/)
-- [Boost 1.55.0](https://sourceforge.net/projects/boost/files/boost/1.55.0/boost_1_55_0.tar.gz/download) for debug using vs2013
 ### Setup Enviroment
 - $ANDROID_SDK_ROOT
 - $NDK_ROOT
