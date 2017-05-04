@@ -1,13 +1,5 @@
 # ParaCraftMobile
 
-# References
-
-ParaEngine/Mobile/trunk/ParaCraftMobile/frameworks/runtime-src/proj.android/
-
-https://github.com/LiXizhi/ParaEngine/tree/master/Mobile/trunk/ParaCraftMobile/frameworks/runtime-src/Classes
-
-https://www.freefilesync.org/
-
 ## How to build android apk on windows
 ### Dependencies 
 - [Cocos2d-x-3.6](http://www.cocos2d-x.org/filedown/cocos2d-x-3.6.zip) [Download Link](http://www.cocos2d-x.org/filedown/cocos2d-x-3.6.zip)
