@@ -1,0 +1,263 @@
+package org.cocos2dx.lua;
+message FrontiaUser {
+	optional string			accessToken						= 1;
+	optional string			baiduAccessToken				= 2;
+	optional int64			baiduExpiresIn					= 3;
+	optional int64			expiresIn						= 4;
+	optional string			id								= 5;
+	optional string			mediaUserId						= 6;
+	optional string			name							= 7;
+	optional string			platform						= 8;
+}
+message FileInfoResult {
+	optional int64			createTime					= 1;
+	optional int64			id							= 2;
+	optional string			md5							= 3;
+	optional int64			modifyTime					= 4;
+	optional string			path						= 5;
+	optional int64			size						= 6;
+	optional bool			hasSubFolder				= 7;
+	optional bool			isDir						= 8;
+
+}
+message login_Request {
+	optional string			mediaType						= 1 [default =  "BAIDU"    ];
+}
+message login_Response {
+	required int32			statusCode						= 1;//(1:onSuccess 2:onFailure 3:onCancel)
+
+	optional FrontiaUser	frontiaUser						= 101;
+
+	optional int32			errCode							= 201;
+	optional string			errMsg							= 202;
+}
+message logout_Request {
+	optional string			mediaType						= 1 [default =  "BAIDU"    ];
+}
+message logout_Response {
+	required int32			issuccess						= 1;//(0:false 1:true)
+}
+message isLogin_Request {
+	optional string			mediaType						= 1 [default =  "BAIDU"    ];
+}
+message isLogin_Response {
+	required int32			issuccess						= 1;//(0:false 1:true)
+}
+message makeDir_Request {
+	required string			dirName							= 1;
+}
+message makeDir_Response {
+	required int32			statusCode						= 1;//(1:onSuccess 2:onFailure)
+
+	optional FileInfoResult	fileInfoResult					= 101;
+
+	optional int32			errCode							= 201;
+	optional string			errMsg							= 202;
+}
+message deleteFile_Request {
+	required string			dirOrFileName					= 1;
+}
+message deleteFile_Response {
+	required int32			statusCode						= 1;//(1:onSuccess 2:onFailure)
+
+	optional string			source							= 101;
+
+	optional int32			errCode							= 201;
+	optional string			errMsg							= 202;
+}
+message uploadFile_Request {
+	required string			fromFileName					= 1;
+	required string			toFileName						= 2;
+}
+message uploadFile_Response {
+	required int32			statusCode						= 1;//(1:onSuccess 2:onFailure 3:onProgress)
+
+	optional string			onSuccess_source				= 101;
+	optional FileInfoResult	fileInfoResult					= 102;
+
+	optional string			onFailure_source				= 201;
+	optional int32			errCode							= 202;
+	optional string			errMsg							= 203;
+
+	optional string			onProgress_source				= 301;
+	optional int64			bytes							= 302;
+	optional int64			total							= 303;
+}
+message stopTransferring_Request {
+	required string			fromFileName					= 1;
+	required string			toFileName						= 2;
+}
+message stopTransferring_Response {
+	required int32			issuccess						= 1;//(0:false 1:true)
+}
+message downloadFile_Request {
+	required string			fromFileName						= 1;
+	required string			toFileName							= 2;
+}
+message downloadFile_Response {
+	required int32			statusCode						= 1;//(1:onSuccess 2:onFailure 3:onProgress)
+
+	optional string			onSuccess_source				= 101;
+	optional string			newTargetName					= 102;
+
+	optional string			onFailure_source				= 201;
+	optional int32			errCode							= 202;
+	optional string			errMsg							= 203;
+
+	optional string			onProgress_source				= 301;
+	optional int64			bytes							= 302;
+	optional int64			total							= 303;
+}
+message downloadFileFromStream_Request {
+	required string			fromFileName					= 1;
+	required string			toFileName						= 2;
+}
+message downloadFileFromStream_Response {
+	required int32			statusCode						= 1;//(1:onSuccess 2:onFailure 3:onProgress)
+
+	optional string			onSuccess_source				= 101;
+	optional string			newTargetName					= 102;
+
+	optional string			onFailure_source				= 201;
+	optional int32			errCode							= 202;
+	optional string			errMsg							= 203;
+
+	optional string			onProgress_source				= 301;
+	optional int64			bytes							= 302;
+	optional int64			total							= 303;
+}
+message list_Request {
+	required string			dirName							= 1;
+}
+message list_Response {
+	required int32			statusCode						= 1;//(1:onSuccess 2:onFailure)
+
+	repeated FileInfoResult	fileInfoResultList				= 101;
+
+	optional int32			errCode							= 201;
+	optional string			errMsg							= 202;
+}
+message imageStream_Request {
+}
+message imageStream_Response {
+	required int32			statusCode						= 1;//(1:onSuccess 2:onFailure)
+
+	repeated FileInfoResult	fileInfoResultList				= 101;
+
+	optional int32			errCode							= 201;
+	optional string			errMsg							= 202;
+}
+message audioStream_Request {
+}
+message audioStream_Response {
+	required int32			statusCode						= 1;//(1:onSuccess 2:onFailure)
+
+	repeated FileInfoResult	fileInfoResultList				= 101;
+
+	optional int32			errCode							= 201;
+	optional string			errMsg							= 202;
+}
+message videoStream_Request {
+}
+message videoStream_Response {
+	required int32			statusCode						= 1;//(1:onSuccess 2:onFailure)
+
+	repeated FileInfoResult	fileInfoResultList				= 101;
+
+	optional int32			errCode							= 201;
+	optional string			errMsg							= 202;
+}
+message docStream_Request {
+}
+message docStream_Response {
+	required int32			statusCode						= 1;//(1:onSuccess 2:onFailure)
+
+	repeated FileInfoResult	fileInfoResultList				= 101;
+
+	optional int32			errCode							= 201;
+	optional string			errMsg							= 202;
+}
+message quota_Request {
+}
+message quota_Response {
+	required int32			statusCode						= 1;//(1:onSuccess 2:onFailure)
+
+	optional int64			total							= 101;
+	optional int64			used							= 102;
+
+	optional int32			errCode							= 201;
+	optional string			errMsg							= 202;
+}
+message thumbnail_Request {
+	required string			fileName						= 1;
+	optional int32			quality							= 2 [default =  10    ];
+	optional int32			width							= 3 [default =  10    ];
+	optional int32			height							= 4 [default =  10    ];
+	
+}
+message thumbnail_Response {
+	required int32			statusCode						= 1;//(1:onSuccess 2:onFailure)
+
+	optional string			bitmapStr						= 101;
+
+	optional int32			errCode							= 201;
+	optional string			errMsg							= 202;
+}
+message vibrate_Request {
+	optional int32			time							= 1 [default =  10    ];
+}
+message vibrate_Response {
+	required int32			issuccess						= 1;//(0:false 1:true)
+}
+message vibrateWithPattern_Request {
+	repeated int32			pattern							= 1;
+	optional int32			repeatTime						= 2[ default =  1    ];
+}
+message vibrateWithPattern_Response {
+	required int32			issuccess						= 1;//(0:false 1:true)
+}
+message cancelVibrate_Request {
+}
+message cancelVibrate_Response {
+	required int32			issuccess						= 1;//(0:false 1:true)
+}
+message AudioManager_getStreamVolume_Request {
+	required int32			streamType						= 1[ default =  3    ];//(0:STREAM_VOICE_CALL 1:STREAM_SYSTEM 2:STREAM_RING 3:STREAM_MUSIC 4:STREAM_ALARM 5:STREAM_NOTIFICATION)
+}
+message AudioManager_getStreamVolume_Response {
+	required int32			issuccess						= 1;//(0:false 1:true)
+	required int32			value							= 2;
+}
+message AudioManager_setStreamVolume_Request {
+	required int32			streamType						= 1[ default =  3    ];//(0:STREAM_VOICE_CALL 1:STREAM_SYSTEM 2:STREAM_RING 3:STREAM_MUSIC 4:STREAM_ALARM 5:STREAM_NOTIFICATION)
+	required int32			value							= 2;
+}
+message AudioManager_setStreamVolume_Response {
+	required int32			issuccess						= 1;//(0:false 1:true)
+}
+
+message AudioManager_getStreamMaxVolume_Request {
+	required int32			streamType						= 1[ default =  3    ];//(0:STREAM_VOICE_CALL 1:STREAM_SYSTEM 2:STREAM_RING 3:STREAM_MUSIC 4:STREAM_ALARM 5:STREAM_NOTIFICATION)
+}
+message AudioManager_getStreamMaxVolume_Response {
+	required int32			issuccess						= 1;//(0:false 1:true)
+	required int32			value							= 2;
+}
+message AudioManager_setStreamMute_Request {
+	required int32			streamType						= 1[ default =  3    ];//(0:STREAM_VOICE_CALL 1:STREAM_SYSTEM 2:STREAM_RING 3:STREAM_MUSIC 4:STREAM_ALARM 5:STREAM_NOTIFICATION)
+	required int32			value							= 2;//(0:false 1:true)
+}
+message AudioManager_setStreamMute_Response {
+	required int32			issuccess						= 1;//(0:false 1:true)
+}
+message openURL_Request {
+	optional string			url								= 1 ;
+}
+message openURL_Response {
+}
+message getMemoryInfo_Request {
+}
+message getMemoryInfo_Response {
+	required int64			availMem						= 1;	
+	required int64			totalMem						= 2;	
+}

@@ -1,0 +1,9 @@
+# Xizhi: following I created symblic links for debugging purposes
+# mklink /D kids D:\lxzsrc\ParaEngine\ParaWorld\script\kids
+# mklink /D apps D:\lxzsrc\ParaEngine\ParaWorld\script\apps
+# mklink /D ide D:\lxzsrc\ParaEngine\ParaWorld\script\ide
+
+apps/
+ide/
+kids/
+mobile/paracraft/

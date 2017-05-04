@@ -1,0 +1,1376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4E6A7A0E-DDD8-4BAA-8B22-C964069364ED}</ProjectGuid>
+    <ProjectName>ParaCraftMobile</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\cocos2d-x\cocos\2d\cocos2dx.props" />
+    <Import Project="..\..\cocos2d-x\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\cocos2d-x\cocos\2d\cocos2dx.props" />
+    <Import Project="..\..\cocos2d-x\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <SourcePath>$(SourcePath);</SourcePath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <SourcePath>$(SourcePath);</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\Classes\tinyxml;$(ProjectDir)..\externals\assimp\include;$(ProjectDir)..\Classes\renderer;$(ProjectDir)..\Classes\math;$(ProjectDir)..\Classes\Core;$(ProjectDir)..\Classes\3dengine;$(ProjectDir)..\Classes\IO;$(ProjectDir)..\Classes\util;$(ProjectDir)..\Classes\ParaScriptBindings;$(ProjectDir)..\Classes\Engine;$(ProjectDir)..\Classes\NPL;$(ProjectDir)..\Classes\jsoncpp\include;$(ProjectDir)..\..\cocos2d-x\external\win32-specific\zlib\include;$(ProjectDir)..\..\cocos2d-x\external\tinyxml2;$(ProjectDir)..\..\cocos2d-x\external\curl\include\win32;$(ProjectDir)..\..\cocos2d-x\external\sqlite3\include;$(ProjectDir)..\Classes\luabind;$(ProjectDir)..\external\boost\boost_1_55_0;$(ProjectDir)..\Classes;$(EngineRoot)external\;$(EngineRoot)cocos\scripting\lua-bindings\auto;$(EngineRoot)cocos\scripting\lua-bindings\manual;$(EngineRoot)cocos\audio\include;$(EngineRoot)external\lua\lua;$(EngineRoot)external\lua\tolua;$(EngineRoot)external\chipmunk\include\chipmunk;$(ProjectDir)..\Classes\jsoncpp\include\json\;$(EngineRoot)extensions;$(EngineRoot);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>AUTOUPDATE_PARAENGINE;PARAENGINE_MOBILE;WIN32;_WINDOWS;_DEBUG;COCOS2DXWIN32_EXPORTS;GL_GLEXT_PROTOTYPES;LUA_BUILD_AS_DLL;STRICT;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS_DEBUG;_SCL_SECURE_NO_WARNINGS;COCOS2D_DEBUG=1;BOOST_SIGNALS_NO_DEPRECATION_WARNING;TIXML_USE_STL;PE_CORE_EXPORTING;BOOST_ASIO_HAS_STD_CHRONO_MONOTONIC_CLOCK;BOOST_ASIO_HAS_STD_CHRONO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <PrecompiledHeaderFile>ParaEngine.h</PrecompiledHeaderFile>
+      <AdditionalOptions>-Zm140 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\externals\assimp\prebuilt\win32dll;$(ProjectDir)..\external\boost\boost_1_55_0\win32;$(ProjectDir)..\..\cocos2d-x\external\sqlite3\libraries\win32;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp.lib;libboost_date_time-vc120-mt-gd-1_55.lib;libcurl_imp.lib;lua51.lib;websockets.lib;GlU32.Lib;sqlite3.lib;libcocos2d.lib;libluacocos2d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\include;$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>ParaCraftMobile.h</HeaderFileName>
+      <InterfaceIdentifierFileName>ParaCraftMobile_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>ParaCraftMobile_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/ParaCraftMobile.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\Classes\tinyxml;$(ProjectDir)..\externals\assimp\include;$(ProjectDir)..\Classes\renderer;$(ProjectDir)..\Classes\math;$(ProjectDir)..\Classes\Core;$(ProjectDir)..\Classes\3dengine;$(ProjectDir)..\Classes\IO;$(ProjectDir)..\Classes\util;$(ProjectDir)..\Classes\ParaScriptBindings;$(ProjectDir)..\Classes\Engine;$(ProjectDir)..\Classes\NPL;$(ProjectDir)..\Classes\jsoncpp\include;$(ProjectDir)..\..\cocos2d-x\external\win32-specific\zlib\include;$(ProjectDir)..\..\cocos2d-x\external\tinyxml2;$(ProjectDir)..\..\cocos2d-x\external\curl\include\win32;$(ProjectDir)..\..\cocos2d-x\external\sqlite3\include;$(ProjectDir)..\Classes\luabind;$(ProjectDir)..\external\boost\boost_1_55_0;$(ProjectDir)..\Classes;$(EngineRoot)external\;$(EngineRoot)cocos\scripting\lua-bindings\auto;$(EngineRoot)cocos\scripting\lua-bindings\manual;$(EngineRoot)cocos\audio\include;$(EngineRoot)external\lua\lua;$(EngineRoot)external\lua\tolua;$(ProjectDir)..\Classes\jsoncpp\include\json\;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;$(EngineRoot);%(AdditionalIncludeDirectories;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>AUTOUPDATE_PARAENGINE;PARAENGINE_MOBILE;WIN32;_WINDOWS;COCOS2DXWIN32_EXPORTS;GL_GLEXT_PROTOTYPES;LUA_BUILD_AS_DLL;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;BOOST_SIGNALS_NO_DEPRECATION_WARNING;TIXML_USE_STL;PE_CORE_EXPORTING;BOOST_ASIO_HAS_STD_CHRONO_MONOTONIC_CLOCK;BOOST_ASIO_HAS_STD_CHRONO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/EHsc -Zm140 %(AdditionalOptions)</AdditionalOptions>
+      <PrecompiledHeaderFile>ParaEngine.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\externals\assimp\prebuilt\win32dll;$(ProjectDir)..\external\boost\boost_1_55_0\win32;$(OutDir);$(ProjectDir)..\..\cocos2d-x\external\sqlite3\libraries\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp.lib;libboost_date_time-vc120-mt-1_55.lib;libcurl_imp.lib;lua51.lib;websockets.lib;GlU32.Lib;sqlite3.lib;libcocos2d.lib;libluacocos2d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\include;$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>ParaCraftMobile.h</HeaderFileName>
+      <InterfaceIdentifierFileName>ParaCraftMobile_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>ParaCraftMobile_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/ParaCraftMobile.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+      <Message>copy files</Message>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\2dengine\EventBinding.h" />
+    <ClInclude Include="..\Classes\2dengine\FontRendererOpenGL.h" />
+    <ClInclude Include="..\Classes\2dengine\GrowableArray.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIAttributeGrid.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIBase.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIButton.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIContainer.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIDirectInput.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIEdit.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIEvent.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIHighlight.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIIME.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIIMEDelegate.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIIMEEditBox.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIKeyboardVirtual.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIListBox.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIMouseVirtual.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIPosition.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIResource.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIRoot.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIScript.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIScrollBar.h" />
+    <ClInclude Include="..\Classes\2dengine\GUISlider.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIState.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIText.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIToolTip.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIUniBuffer.h" />
+    <ClInclude Include="..\Classes\2dengine\GUIWebBrowser.h" />
+    <ClInclude Include="..\Classes\2dengine\TextureParams.h" />
+    <ClInclude Include="..\Classes\2dengine\TouchGestureBase.h" />
+    <ClInclude Include="..\Classes\2dengine\TouchGesturePinch.h" />
+    <ClInclude Include="..\Classes\2dengine\TouchSessions.h" />
+    <ClInclude Include="..\Classes\3dengine\AIBase.h" />
+    <ClInclude Include="..\Classes\3dengine\AIModuleNPC.h" />
+    <ClInclude Include="..\Classes\3dengine\AITasks.h" />
+    <ClInclude Include="..\Classes\3dengine\AnimInstanceBase.h" />
+    <ClInclude Include="..\Classes\3dengine\AttributeProvider.h" />
+    <ClInclude Include="..\Classes\3dengine\AudioEngine2.h" />
+    <ClInclude Include="..\Classes\3dengine\AutoCamera.h" />
+    <ClInclude Include="..\Classes\3dengine\BaseCamera.h" />
+    <ClInclude Include="..\Classes\3dengine\BaseObject.h" />
+    <ClInclude Include="..\Classes\3dengine\BatchedElementDraw.h" />
+    <ClInclude Include="..\Classes\3dengine\BillBoardViewInfo.h" />
+    <ClInclude Include="..\Classes\3dengine\BipedController.h" />
+    <ClInclude Include="..\Classes\3dengine\BipedObject.h" />
+    <ClInclude Include="..\Classes\3dengine\BipedStateManager.h" />
+    <ClInclude Include="..\Classes\3dengine\BipedWayPoint.h" />
+    <ClInclude Include="..\Classes\3dengine\BlockDynamicObject.h" />
+    <ClInclude Include="..\Classes\3dengine\BlockPieceParticle.h" />
+    <ClInclude Include="..\Classes\3dengine\BufferPicking.h" />
+    <ClInclude Include="..\Classes\3dengine\CameraFrustum.h" />
+    <ClInclude Include="..\Classes\3dengine\CanvasCamera.h" />
+    <ClInclude Include="..\Classes\3dengine\CharacterDB.h" />
+    <ClInclude Include="..\Classes\3dengine\ContainerObject.h" />
+    <ClInclude Include="..\Classes\3dengine\CustomCharCommon.h" />
+    <ClInclude Include="..\Classes\3dengine\CustomCharFace.h" />
+    <ClInclude Include="..\Classes\3dengine\CustomCharModelInstance.h" />
+    <ClInclude Include="..\Classes\3dengine\CustomCharRenderTarget.h" />
+    <ClInclude Include="..\Classes\3dengine\CustomCharSettings.h" />
+    <ClInclude Include="..\Classes\3dengine\DummyAnimInstance.h" />
+    <ClInclude Include="..\Classes\3dengine\EffectFileHandles.h" />
+    <ClInclude Include="..\Classes\3dengine\EffectHelper.h" />
+    <ClInclude Include="..\Classes\3dengine\EnvironmentSim.h" />
+    <ClInclude Include="..\Classes\3dengine\FaceTrackingCtrler.h" />
+    <ClInclude Include="..\Classes\3dengine\Fog.h" />
+    <ClInclude Include="..\Classes\3dengine\IGameObject.h" />
+    <ClInclude Include="..\Classes\3dengine\IHeadOn3D.h" />
+    <ClInclude Include="..\Classes\3dengine\IRefObject.h" />
+    <ClInclude Include="..\Classes\3dengine\IScene.h" />
+    <ClInclude Include="..\Classes\3dengine\IViewClippingObject.h" />
+    <ClInclude Include="..\Classes\3dengine\KeyFrame.h" />
+    <ClInclude Include="..\Classes\3dengine\LightManager.h" />
+    <ClInclude Include="..\Classes\3dengine\LightObject.h" />
+    <ClInclude Include="..\Classes\3dengine\LightParam.h" />
+    <ClInclude Include="..\Classes\3dengine\light_scattering_data.h" />
+    <ClInclude Include="..\Classes\3dengine\ManagedDef.h" />
+    <ClInclude Include="..\Classes\3dengine\ManagedLoader.h" />
+    <ClInclude Include="..\Classes\3dengine\MeshEntity.h" />
+    <ClInclude Include="..\Classes\3dengine\MeshObject.h" />
+    <ClInclude Include="..\Classes\3dengine\MeshPhysicsObject.h" />
+    <ClInclude Include="..\Classes\3dengine\MiniSceneGraph.h" />
+    <ClInclude Include="..\Classes\3dengine\MissileObject.h" />
+    <ClInclude Include="..\Classes\3dengine\MovieCtrlers.h" />
+    <ClInclude Include="..\Classes\3dengine\MoviePlatform.h" />
+    <ClInclude Include="..\Classes\3dengine\ObjectAutoReleasePool.h" />
+    <ClInclude Include="..\Classes\3dengine\ObjectEvent.h" />
+    <ClInclude Include="..\Classes\3dengine\OceanManager.h" />
+    <ClInclude Include="..\Classes\3dengine\OverlayObject.h" />
+    <ClInclude Include="..\Classes\3dengine\ParaEngineSettings.h" />
+    <ClInclude Include="..\Classes\3dengine\ParaMeshXMLFile.h" />
+    <ClInclude Include="..\Classes\3dengine\ParaPhysics.h" />
+    <ClInclude Include="..\Classes\3dengine\ParaXAnimInstance.h" />
+    <ClInclude Include="..\Classes\3dengine\ParaXEntity.h" />
+    <ClInclude Include="..\Classes\3dengine\ParaXMaterial.h" />
+    <ClInclude Include="..\Classes\3dengine\ParaXModelCanvas.h" />
+    <ClInclude Include="..\Classes\3dengine\ParaXRefObject.h" />
+    <ClInclude Include="..\Classes\3dengine\ParaXSerializer.h" />
+    <ClInclude Include="..\Classes\3dengine\PhysicsWorld.h" />
+    <ClInclude Include="..\Classes\3dengine\PortalFrustum.h" />
+    <ClInclude Include="..\Classes\3dengine\PortalNode.h" />
+    <ClInclude Include="..\Classes\3dengine\PredefinedEvents.h" />
+    <ClInclude Include="..\Classes\3dengine\RayCollider.h" />
+    <ClInclude Include="..\Classes\3dengine\RenderTarget.h" />
+    <ClInclude Include="..\Classes\3dengine\SceneObject.h" />
+    <ClInclude Include="..\Classes\3dengine\SceneObjectPicking.h" />
+    <ClInclude Include="..\Classes\3dengine\sceneRenderList.h" />
+    <ClInclude Include="..\Classes\3dengine\SceneState.h" />
+    <ClInclude Include="..\Classes\3dengine\SceneWriter.h" />
+    <ClInclude Include="..\Classes\3dengine\SelectionManager.h" />
+    <ClInclude Include="..\Classes\3dengine\SequenceCtler.h" />
+    <ClInclude Include="..\Classes\3dengine\SequenceEntity.h" />
+    <ClInclude Include="..\Classes\3dengine\SequenceManager.h" />
+    <ClInclude Include="..\Classes\3dengine\ShadowVolume.h" />
+    <ClInclude Include="..\Classes\3dengine\SkyMesh.h" />
+    <ClInclude Include="..\Classes\3dengine\SortedFaceGroups.h" />
+    <ClInclude Include="..\Classes\3dengine\SphereObject.h" />
+    <ClInclude Include="..\Classes\3dengine\SunLight.h" />
+    <ClInclude Include="..\Classes\3dengine\TerrainTile.h" />
+    <ClInclude Include="..\Classes\3dengine\TerrainTileRoot.h" />
+    <ClInclude Include="..\Classes\3dengine\TextureComposer.h" />
+    <ClInclude Include="..\Classes\3dengine\TileObject.h" />
+    <ClInclude Include="..\Classes\3dengine\ViewCullingObject.h" />
+    <ClInclude Include="..\Classes\3dengine\Viewport.h" />
+    <ClInclude Include="..\Classes\3dengine\ViewportManager.h" />
+    <ClInclude Include="..\Classes\3dengine\WeatherEffect.h" />
+    <ClInclude Include="..\Classes\3dengine\WeatherParticle.h" />
+    <ClInclude Include="..\Classes\3dengine\WeatherParticleSpawner.h" />
+    <ClInclude Include="..\Classes\3dengine\WorldInfo.h" />
+    <ClInclude Include="..\Classes\3dengine\XRefObject.h" />
+    <ClInclude Include="..\Classes\3dengine\ZoneNode.h" />
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\AutoUpdate\AssetsManager.h" />
+    <ClInclude Include="..\Classes\AutoUpdate\AssetsManagerGlobal.h" />
+    <ClInclude Include="..\Classes\AutoUpdate\AssetsWorker.h" />
+    <ClInclude Include="..\Classes\AutoUpdate\AutoUpdater.h" />
+    <ClInclude Include="..\Classes\AutoUpdate\Downloader.h" />
+    <ClInclude Include="..\Classes\AutoUpdate\FileUtils.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockChunk.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockCommon.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockConfig.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockCoordinate.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockDataCodec.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockDirection.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockFacing.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockIndex.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockLightGridBase.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockLightGridClient.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockLightGridServer.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockModel.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockModelManager.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockModelProvider.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockReadWriteLock.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockRegion.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockRenderTask.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockTemplate.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockTessellators.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockWorld.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockWorldClient.h" />
+    <ClInclude Include="..\Classes\BlockEngine\BlockWorldManager.h" />
+    <ClInclude Include="..\Classes\BlockEngine\CarpetModelProvider.h" />
+    <ClInclude Include="..\Classes\BlockEngine\ChunkMaxHeight.h" />
+    <ClInclude Include="..\Classes\BlockEngine\ChunkVertexBuilderManager.h" />
+    <ClInclude Include="..\Classes\BlockEngine\MultiFrameBlockWorldRenderer.h" />
+    <ClInclude Include="..\Classes\BlockEngine\RenderableChunk.h" />
+    <ClInclude Include="..\Classes\BlockEngine\SlopeModelProvider.h" />
+    <ClInclude Include="..\Classes\BlockEngine\WireModelProvider.h" />
+    <ClInclude Include="..\Classes\BMaxModel\BMaxAnimGenerator.h" />
+    <ClInclude Include="..\Classes\BMaxModel\BMaxBlockModelNode.h" />
+    <ClInclude Include="..\Classes\BMaxModel\BMaxFrameNode.h" />
+    <ClInclude Include="..\Classes\BMaxModel\BMaxNode.h" />
+    <ClInclude Include="..\Classes\BMaxModel\BMaxObject.h" />
+    <ClInclude Include="..\Classes\BMaxModel\BMaxParser.h" />
+    <ClInclude Include="..\Classes\CGUIRootLayer.h" />
+    <ClInclude Include="..\Classes\CocosKeyMap.h" />
+    <ClInclude Include="..\Classes\Core\Array.h" />
+    <ClInclude Include="..\Classes\Core\AssetEntity.h" />
+    <ClInclude Include="..\Classes\Core\AssetManager.h" />
+    <ClInclude Include="..\Classes\Core\AttributeClass.h" />
+    <ClInclude Include="..\Classes\Core\AttributeClassIDTable.h" />
+    <ClInclude Include="..\Classes\Core\AttributeField.h" />
+    <ClInclude Include="..\Classes\Core\AttributeModelProxy.h" />
+    <ClInclude Include="..\Classes\Core\AttributesManager.h" />
+    <ClInclude Include="..\Classes\Core\baseinterface.h" />
+    <ClInclude Include="..\Classes\Core\BootStrapper.h" />
+    <ClInclude Include="..\Classes\Core\CommandLineParams.h" />
+    <ClInclude Include="..\Classes\Core\CommandLineParser.hpp" />
+    <ClInclude Include="..\Classes\Core\ContentLoaderCCSFace.h" />
+    <ClInclude Include="..\Classes\Core\ContentLoaderCCSSkin.h" />
+    <ClInclude Include="..\Classes\Core\ContentLoaderMesh.h" />
+    <ClInclude Include="..\Classes\Core\ContentLoaderParaX.h" />
+    <ClInclude Include="..\Classes\Core\ContentLoaders.h" />
+    <ClInclude Include="..\Classes\Core\ContentLoaderTexture.h" />
+    <ClInclude Include="..\Classes\Core\coreexport.h" />
+    <ClInclude Include="..\Classes\Core\DatabaseEntity.h" />
+    <ClInclude Include="..\Classes\Core\DataProviderManager.h" />
+    <ClInclude Include="..\Classes\Core\DynamicAttributeField.h" />
+    <ClInclude Include="..\Classes\Core\DynamicAttributesSet.h" />
+    <ClInclude Include="..\Classes\Core\DynamicVertexBufferEntity.h" />
+    <ClInclude Include="..\Classes\Core\DynamicVertexBufferEntityDirectX.h" />
+    <ClInclude Include="..\Classes\Core\DynamicVertexBufferEntityOpenGL.h" />
+    <ClInclude Include="..\Classes\Core\DynamicVertexBufferManager.h" />
+    <ClInclude Include="..\Classes\Core\EventClasses.h" />
+    <ClInclude Include="..\Classes\Core\EventHandler.h" />
+    <ClInclude Include="..\Classes\Core\EventsCenter.h" />
+    <ClInclude Include="..\Classes\Core\Events_def.h" />
+    <ClInclude Include="..\Classes\Core\FrameRateController.h" />
+    <ClInclude Include="..\Classes\Core\Globals.h" />
+    <ClInclude Include="..\Classes\Core\IAnimated.h" />
+    <ClInclude Include="..\Classes\Core\IAttributeFields.h" />
+    <ClInclude Include="..\Classes\Core\IBatchedElementDraw.h" />
+    <ClInclude Include="..\Classes\Core\IEnvironmentSim.h" />
+    <ClInclude Include="..\Classes\Core\IEvent.h" />
+    <ClInclude Include="..\Classes\Core\IInfoCenter.h" />
+    <ClInclude Include="..\Classes\Core\ImageEntity.h" />
+    <ClInclude Include="..\Classes\Core\IMovieCodec.h" />
+    <ClInclude Include="..\Classes\Core\INPL.h" />
+    <ClInclude Include="..\Classes\Core\INPLAcitvationFile.h" />
+    <ClInclude Include="..\Classes\Core\INPLRuntime.h" />
+    <ClInclude Include="..\Classes\Core\INPLRuntimeState.h" />
+    <ClInclude Include="..\Classes\Core\INPLScriptingState.h" />
+    <ClInclude Include="..\Classes\Core\InterprocessMsg.h" />
+    <ClInclude Include="..\Classes\Core\InterprocessQueue.hpp" />
+    <ClInclude Include="..\Classes\Core\IParaAudioEngine.h" />
+    <ClInclude Include="..\Classes\Core\IParaDebugDraw.h" />
+    <ClInclude Include="..\Classes\Core\IParaEngineApp.h" />
+    <ClInclude Include="..\Classes\Core\IParaEngineCore.h" />
+    <ClInclude Include="..\Classes\Core\IParaPhysics.h" />
+    <ClInclude Include="..\Classes\Core\IParaWebPlayer.h" />
+    <ClInclude Include="..\Classes\Core\IParaWebService.h" />
+    <ClInclude Include="..\Classes\Core\IPCManager.h" />
+    <ClInclude Include="..\Classes\Core\ipc_message_queue.hpp" />
+    <ClInclude Include="..\Classes\Core\luaSQLite.h" />
+    <ClInclude Include="..\Classes\Core\memdebug.h" />
+    <ClInclude Include="..\Classes\Core\MiscEntity.h" />
+    <ClInclude Include="..\Classes\Core\NPLInterface.hpp" />
+    <ClInclude Include="..\Classes\Core\NPLMiniRuntime.hpp" />
+    <ClInclude Include="..\Classes\Core\NPLTypes.h" />
+    <ClInclude Include="..\Classes\Core\ObjectFactory.h" />
+    <ClInclude Include="..\Classes\Core\ObjScriptPool.h" />
+    <ClInclude Include="..\Classes\Core\ParaEngine.h" />
+    <ClInclude Include="..\Classes\Core\ParaEngineAppBase.h" />
+    <ClInclude Include="..\Classes\Core\ParaEngineCore.h" />
+    <ClInclude Include="..\Classes\Core\ParaEngineInfo.h" />
+    <ClInclude Include="..\Classes\Core\ParaEngineService.h" />
+    <ClInclude Include="..\Classes\Core\ParameterBlock.h" />
+    <ClInclude Include="..\Classes\Core\ParaPlatformConfig.h" />
+    <ClInclude Include="..\Classes\Core\ParaPlatformMacros.h" />
+    <ClInclude Include="..\Classes\Core\ParaUtils.hpp" />
+    <ClInclude Include="..\Classes\Core\ParaWorldAsset.h" />
+    <ClInclude Include="..\Classes\Core\ParticleElement.h" />
+    <ClInclude Include="..\Classes\Core\PERef.h" />
+    <ClInclude Include="..\Classes\Core\PERefPtr.h" />
+    <ClInclude Include="..\Classes\Core\PEtypes.h" />
+    <ClInclude Include="..\Classes\Core\Platforms.h" />
+    <ClInclude Include="..\Classes\Core\PluginAPI.h" />
+    <ClInclude Include="..\Classes\Core\PluginLoader.hpp" />
+    <ClInclude Include="..\Classes\Core\PluginManager.h" />
+    <ClInclude Include="..\Classes\Core\SpriteFontEntity.h" />
+    <ClInclude Include="..\Classes\Core\SpriteFontEntityDirectX.h" />
+    <ClInclude Include="..\Classes\Core\SpriteFontEntityOpenGL.h" />
+    <ClInclude Include="..\Classes\Core\TextureEntity.h" />
+    <ClInclude Include="..\Classes\Core\TextureEntityDirectX.h" />
+    <ClInclude Include="..\Classes\Core\TextureEntityOpenGL.h" />
+    <ClInclude Include="..\Classes\Core\TouchEventSession.h" />
+    <ClInclude Include="..\Classes\Core\unordered_ref_array.h" />
+    <ClInclude Include="..\Classes\Core\UrlLoaders.h" />
+    <ClInclude Include="..\Classes\Core\Variable.h" />
+    <ClInclude Include="..\Classes\curllua\curl_error.h" />
+    <ClInclude Include="..\Classes\curllua\Lua-cURL-share.h" />
+    <ClInclude Include="..\Classes\curllua\Lua-cURL.h" />
+    <ClInclude Include="..\Classes\curllua\Lua-utility.h" />
+    <ClInclude Include="..\Classes\debugtools\paradebug.h" />
+    <ClInclude Include="..\Classes\debugtools\Profiler.h" />
+    <ClInclude Include="..\Classes\dir_monitor\basic_dir_monitor.hpp" />
+    <ClInclude Include="..\Classes\dir_monitor\dir_monitor.hpp" />
+    <ClInclude Include="..\Classes\Engine\ParaEngineApp.h" />
+    <ClInclude Include="..\Classes\Engine\ParaEngineClientConfig.h" />
+    <ClInclude Include="..\Classes\Engine\ParaEngineClientConfig.win32.h" />
+    <ClInclude Include="..\Classes\ic\ICConfigManager.h" />
+    <ClInclude Include="..\Classes\ic\ICDBManager.h" />
+    <ClInclude Include="..\Classes\ic\ICRecordSet.h" />
+    <ClInclude Include="..\Classes\ic\ParaDatabase.h" />
+    <ClInclude Include="..\Classes\ic\SQLStatement.h" />
+    <ClInclude Include="..\Classes\IO\Archive.h" />
+    <ClInclude Include="..\Classes\IO\AssetManifest.h" />
+    <ClInclude Include="..\Classes\IO\AsyncLoader.h" />
+    <ClInclude Include="..\Classes\IO\FileData.h" />
+    <ClInclude Include="..\Classes\IO\FileHandle.h" />
+    <ClInclude Include="..\Classes\IO\FileLogger.h" />
+    <ClInclude Include="..\Classes\IO\FileManager.h" />
+    <ClInclude Include="..\Classes\IO\FilePath.h" />
+    <ClInclude Include="..\Classes\IO\FileSearchResult.h" />
+    <ClInclude Include="..\Classes\IO\FileSystemWatcher.h" />
+    <ClInclude Include="..\Classes\IO\FileUtils.h" />
+    <ClInclude Include="..\Classes\IO\IDataLoader.h" />
+    <ClInclude Include="..\Classes\IO\MemReadFile.h" />
+    <ClInclude Include="..\Classes\IO\ParaFile.h" />
+    <ClInclude Include="..\Classes\IO\ReadFile.h" />
+    <ClInclude Include="..\Classes\IO\ZipArchive.h" />
+    <ClInclude Include="..\Classes\IO\ZipWriter.h" />
+    <ClInclude Include="..\Classes\jsoncpp\include\json\autolink.h" />
+    <ClInclude Include="..\Classes\jsoncpp\include\json\config.h" />
+    <ClInclude Include="..\Classes\jsoncpp\include\json\features.h" />
+    <ClInclude Include="..\Classes\jsoncpp\include\json\forwards.h" />
+    <ClInclude Include="..\Classes\jsoncpp\include\json\json.h" />
+    <ClInclude Include="..\Classes\jsoncpp\include\json\reader.h" />
+    <ClInclude Include="..\Classes\jsoncpp\include\json\value.h" />
+    <ClInclude Include="..\Classes\jsoncpp\include\json\writer.h" />
+    <ClInclude Include="..\Classes\jsoncpp\src\lib_json\json_batchallocator.h" />
+    <ClInclude Include="..\Classes\MainLoopTimer.h" />
+    <ClInclude Include="..\Classes\math\AABBCollider.h" />
+    <ClInclude Include="..\Classes\math\asm_math.h" />
+    <ClInclude Include="..\Classes\math\Collider.h" />
+    <ClInclude Include="..\Classes\math\FPU.h" />
+    <ClInclude Include="..\Classes\math\ParaAngle.h" />
+    <ClInclude Include="..\Classes\math\ParaAxisAlignedBox.h" />
+    <ClInclude Include="..\Classes\math\ParaColor.h" />
+    <ClInclude Include="..\Classes\math\ParaGlobals.h" />
+    <ClInclude Include="..\Classes\math\ParaLine.h" />
+    <ClInclude Include="..\Classes\math\ParaMargins.h" />
+    <ClInclude Include="..\Classes\math\ParaMath.h" />
+    <ClInclude Include="..\Classes\math\ParaMathMatrix.h" />
+    <ClInclude Include="..\Classes\math\ParaMathMisc.h" />
+    <ClInclude Include="..\Classes\math\ParaMathUtility.h" />
+    <ClInclude Include="..\Classes\math\ParaMathVector.h" />
+    <ClInclude Include="..\Classes\math\ParaMatrix3.h" />
+    <ClInclude Include="..\Classes\math\ParaMatrix4.h" />
+    <ClInclude Include="..\Classes\math\ParaNamespaces.h" />
+    <ClInclude Include="..\Classes\math\ParaPlane.h" />
+    <ClInclude Include="..\Classes\math\ParaPlaneBoundedVolume.h" />
+    <ClInclude Include="..\Classes\math\ParaPoint.h" />
+    <ClInclude Include="..\Classes\math\ParaQuaternion.h" />
+    <ClInclude Include="..\Classes\math\ParaRay.h" />
+    <ClInclude Include="..\Classes\math\ParaRect.h" />
+    <ClInclude Include="..\Classes\math\ParaSize.h" />
+    <ClInclude Include="..\Classes\math\ParaSphere.h" />
+    <ClInclude Include="..\Classes\math\ParaVector2.h" />
+    <ClInclude Include="..\Classes\math\ParaVector3.h" />
+    <ClInclude Include="..\Classes\math\ParaVector4.h" />
+    <ClInclude Include="..\Classes\math\ParaViewport.h" />
+    <ClInclude Include="..\Classes\math\ShapeAABB.h" />
+    <ClInclude Include="..\Classes\math\ShapeCone.h" />
+    <ClInclude Include="..\Classes\math\ShapeFrustum.h" />
+    <ClInclude Include="..\Classes\math\ShapeOBB.h" />
+    <ClInclude Include="..\Classes\math\ShapeRay.h" />
+    <ClInclude Include="..\Classes\math\ShapeSphere.h" />
+    <ClInclude Include="..\Classes\NPL\AISimulator.h" />
+    <ClInclude Include="..\Classes\NPL\NeuronFileState.h" />
+    <ClInclude Include="..\Classes\NPL\NPLActivationFile.h" />
+    <ClInclude Include="..\Classes\NPL\NPLCodec.h" />
+    <ClInclude Include="..\Classes\NPL\NPLCommon.h" />
+    <ClInclude Include="..\Classes\NPL\NPLCompiler.h" />
+    <ClInclude Include="..\Classes\NPL\NPLConfig.h" />
+    <ClInclude Include="..\Classes\NPL\NPLConnection.h" />
+    <ClInclude Include="..\Classes\NPL\NPLConnectionManager.h" />
+    <ClInclude Include="..\Classes\NPL\NPLDispatcher.h" />
+    <ClInclude Include="..\Classes\NPL\NPLHelper.h" />
+    <ClInclude Include="..\Classes\NPL\NPLMemPool.h" />
+    <ClInclude Include="..\Classes\NPL\NPLMessage.h" />
+    <ClInclude Include="..\Classes\NPL\NPLMessageQueue.h" />
+    <ClInclude Include="..\Classes\NPL\NPLMsgHeader.h" />
+    <ClInclude Include="..\Classes\NPL\NPLMsgIn.h" />
+    <ClInclude Include="..\Classes\NPL\NPLMsgIn_parser.h" />
+    <ClInclude Include="..\Classes\NPL\NPLMsgOut.h" />
+    <ClInclude Include="..\Classes\NPL\NPLNetClient.h" />
+    <ClInclude Include="..\Classes\NPL\NPLNetServer.h" />
+    <ClInclude Include="..\Classes\NPL\NPLParser.h" />
+    <ClInclude Include="..\Classes\NPL\NPLRuntime.h" />
+    <ClInclude Include="..\Classes\NPL\NPLRuntimeState.h" />
+    <ClInclude Include="..\Classes\NPL\NPLScriptingState.h" />
+    <ClInclude Include="..\Classes\NPL\NPLStateMemAllocator.h" />
+    <ClInclude Include="..\Classes\NPL\NPLStruct_obsoleted.h" />
+    <ClInclude Include="..\Classes\NPL\NPLTable.h" />
+    <ClInclude Include="..\Classes\NPL\NPLWriter.h" />
+    <ClInclude Include="..\Classes\NPL\NPL_imp.h" />
+    <ClInclude Include="..\Classes\PaintEngine\PaintDevice.h" />
+    <ClInclude Include="..\Classes\PaintEngine\PaintEngine.h" />
+    <ClInclude Include="..\Classes\PaintEngine\PaintEngineGPU.h" />
+    <ClInclude Include="..\Classes\PaintEngine\PaintEngineGPUState.h" />
+    <ClInclude Include="..\Classes\PaintEngine\PaintEngineRaster.h" />
+    <ClInclude Include="..\Classes\PaintEngine\Painter.h" />
+    <ClInclude Include="..\Classes\PaintEngine\PainterState.h" />
+    <ClInclude Include="..\Classes\PaintEngine\ParaRegion.h" />
+    <ClInclude Include="..\Classes\PaintEngine\qbrush.h" />
+    <ClInclude Include="..\Classes\PaintEngine\qfont.h" />
+    <ClInclude Include="..\Classes\PaintEngine\qmatrix.h" />
+    <ClInclude Include="..\Classes\PaintEngine\qpainterpath.h" />
+    <ClInclude Include="..\Classes\PaintEngine\qpen.h" />
+    <ClInclude Include="..\Classes\PaintEngine\qpolygon.h" />
+    <ClInclude Include="..\Classes\PaintEngine\qtextoption.h" />
+    <ClInclude Include="..\Classes\PaintEngine\qtransform.h" />
+    <ClInclude Include="..\Classes\PaintEngine\qvectorpath.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\IObjectScriptingInterface.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\local_bridge_manual.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScripting.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingAudio.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingBlockWorld.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingBrowserManager.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingCharacter.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingCommon.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingFlashPlayer.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingGlobal.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingGraphics.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingGUI.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingHTMLBrowser.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingIC.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingIO.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingIPC.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingMisc.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingMovie.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingNetwork.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingNPL.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingPainter.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingScene.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingTerrain.h" />
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingWorld.h" />
+    <ClInclude Include="..\Classes\ParaSimpleAudioEngine.h" />
+    <ClInclude Include="..\Classes\ParaSimpleAudioSource.h" />
+    <ClInclude Include="..\Classes\ParaXModel\animated.h" />
+    <ClInclude Include="..\Classes\ParaXModel\AnimTable.h" />
+    <ClInclude Include="..\Classes\ParaXModel\BoneAnimProvider.h" />
+    <ClInclude Include="..\Classes\ParaXModel\BoneChain.h" />
+    <ClInclude Include="..\Classes\ParaXModel\ColladaModelLoader.h" />
+    <ClInclude Include="..\Classes\ParaXModel\FBXMaterial.h" />
+    <ClInclude Include="..\Classes\ParaXModel\FBXModelInfo.h" />
+    <ClInclude Include="..\Classes\ParaXModel\FBXParser.h" />
+    <ClInclude Include="..\Classes\ParaXModel\MeshHeader.h" />
+    <ClInclude Include="..\Classes\ParaXModel\modelheaders.h" />
+    <ClInclude Include="..\Classes\ParaXModel\ModelRenderPass.h" />
+    <ClInclude Include="..\Classes\ParaXModel\ParaXBone.h" />
+    <ClInclude Include="..\Classes\ParaXModel\ParaXModel.h" />
+    <ClInclude Include="..\Classes\ParaXModel\ParaXModelCommon.h" />
+    <ClInclude Include="..\Classes\ParaXModel\ParaXModelExporter.h" />
+    <ClInclude Include="..\Classes\ParaXModel\ParaXModelInstance.h" />
+    <ClInclude Include="..\Classes\ParaXModel\ParaXStaticModel.h" />
+    <ClInclude Include="..\Classes\ParaXModel\ParaXStaticModelRenderPass.h" />
+    <ClInclude Include="..\Classes\ParaXModel\particle.h" />
+    <ClInclude Include="..\Classes\ParaXModel\ParticleSystemRef.h" />
+    <ClInclude Include="..\Classes\ParaXModel\TextureAnim.h" />
+    <ClInclude Include="..\Classes\ParaXModel\XFileCharModelParser.h" />
+    <ClInclude Include="..\Classes\ParaXModel\XFileDataObject.h" />
+    <ClInclude Include="..\Classes\ParaXModel\XFileHelper.h" />
+    <ClInclude Include="..\Classes\ParaXModel\XFileParser.h" />
+    <ClInclude Include="..\Classes\ParaXModel\XFileStaticModelParser.h" />
+    <ClInclude Include="..\Classes\platform\ios\LocalBridgeHandler_ios.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\ios\LocalBridgePB.pb.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\ios\LocalBridge_ios.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\Classes\protocol\pb.h" />
+    <ClInclude Include="..\Classes\renderer\EffectManager.h" />
+    <ClInclude Include="..\Classes\renderer\effect_file.h" />
+    <ClInclude Include="..\Classes\renderer\effect_file_DirectX.h" />
+    <ClInclude Include="..\Classes\renderer\effect_file_OpenGL.h" />
+    <ClInclude Include="..\Classes\renderer\ParaVertexBuffer.h" />
+    <ClInclude Include="..\Classes\renderer\ParaVertexBufferPool.h" />
+    <ClInclude Include="..\Classes\renderer\RenderCore.h" />
+    <ClInclude Include="..\Classes\renderer\RenderCoreOpenGL.h" />
+    <ClInclude Include="..\Classes\renderer\RenderDevice.h" />
+    <ClInclude Include="..\Classes\renderer\RenderDeviceDirectX.h" />
+    <ClInclude Include="..\Classes\renderer\RenderDeviceOpenGL.h" />
+    <ClInclude Include="..\Classes\renderer\SpriteRenderer.h" />
+    <ClInclude Include="..\Classes\renderer\SpriteRendererDirectX.h" />
+    <ClInclude Include="..\Classes\renderer\SpriteRendererOpenGL.h" />
+    <ClInclude Include="..\Classes\renderer\VertexDeclaration.h" />
+    <ClInclude Include="..\Classes\renderer\VertexDeclarationOpenGL.h" />
+    <ClInclude Include="..\Classes\renderer\VertexFVF.h" />
+    <ClInclude Include="..\Classes\renderer\VirtualKeyDef.h" />
+    <ClInclude Include="..\Classes\shaders\simple_mesh_normal_vegetation.h" />
+    <ClInclude Include="..\Classes\terrain\Brush.h" />
+    <ClInclude Include="..\Classes\terrain\DetailTexture.h" />
+    <ClInclude Include="..\Classes\terrain\DetailTextureFactory.h" />
+    <ClInclude Include="..\Classes\terrain\DynamicTerrainLoader.h" />
+    <ClInclude Include="..\Classes\terrain\GlobalTerrain.h" />
+    <ClInclude Include="..\Classes\terrain\ImageLoader.h" />
+    <ClInclude Include="..\Classes\terrain\Loader.h" />
+    <ClInclude Include="..\Classes\terrain\Settings.h" />
+    <ClInclude Include="..\Classes\terrain\Terrain.h" />
+    <ClInclude Include="..\Classes\terrain\TerrainBlock.h" />
+    <ClInclude Include="..\Classes\terrain\TerrainBuffer.h" />
+    <ClInclude Include="..\Classes\terrain\TerrainCommon.h" />
+    <ClInclude Include="..\Classes\terrain\TerrainConfig.h" />
+    <ClInclude Include="..\Classes\terrain\TerrainException.h" />
+    <ClInclude Include="..\Classes\terrain\TerrainFilters.h" />
+    <ClInclude Include="..\Classes\terrain\TerrainGeoMipmapIndices.h" />
+    <ClInclude Include="..\Classes\terrain\TerrainLattice.h" />
+    <ClInclude Include="..\Classes\terrain\TerrainLoadListener.h" />
+    <ClInclude Include="..\Classes\terrain\TerrainRegions.h" />
+    <ClInclude Include="..\Classes\terrain\TerrainVertex.h" />
+    <ClInclude Include="..\Classes\terrain\Texture.h" />
+    <ClInclude Include="..\Classes\terrain\TextureCell.h" />
+    <ClInclude Include="..\Classes\terrain\TextureFactory.h" />
+    <ClInclude Include="..\Classes\terrain\TextureGenerator.h" />
+    <ClInclude Include="..\Classes\terrain\TextureSet.h" />
+    <ClInclude Include="..\Classes\terrain\Triangle.h" />
+    <ClInclude Include="..\Classes\terrain\TriangleFan.h" />
+    <ClInclude Include="..\Classes\terrain\TriangleStrip.h" />
+    <ClInclude Include="..\Classes\terrain\TTerrain.h" />
+    <ClInclude Include="..\Classes\terrain\WorldNameFactory.h" />
+    <ClInclude Include="..\Classes\tinyxml\tinyxml.h" />
+    <ClInclude Include="..\Classes\util\bitlib_lua.h" />
+    <ClInclude Include="..\Classes\util\ByteSwap.h" />
+    <ClInclude Include="..\Classes\util\CommonFileDialog.h" />
+    <ClInclude Include="..\Classes\util\ConvertUTF.h" />
+    <ClInclude Include="..\Classes\util\CopyOnWriteHolder.h" />
+    <ClInclude Include="..\Classes\util\cow_ptr.hpp" />
+    <ClInclude Include="..\Classes\util\CSingleton.h" />
+    <ClInclude Include="..\Classes\util\CyoDecode.h" />
+    <ClInclude Include="..\Classes\util\CyoEncode.h" />
+    <ClInclude Include="..\Classes\util\dl_malloc.h" />
+    <ClInclude Include="..\Classes\util\dl_malloc_include.h" />
+    <ClInclude Include="..\Classes\util\EnumProcess.hpp" />
+    <ClInclude Include="..\Classes\util\FastRandom.h" />
+    <ClInclude Include="..\Classes\util\fast_atof.h" />
+    <ClInclude Include="..\Classes\util\fixed_string.hpp" />
+    <ClInclude Include="..\Classes\util\HttpUtility.h" />
+    <ClInclude Include="..\Classes\util\ICollection.h" />
+    <ClInclude Include="..\Classes\util\intrusive_ptr.h" />
+    <ClInclude Include="..\Classes\util\IObjectDrag.h" />
+    <ClInclude Include="..\Classes\util\keyboard.h" />
+    <ClInclude Include="..\Classes\util\Log.h" />
+    <ClInclude Include="..\Classes\util\LogService.h" />
+    <ClInclude Include="..\Classes\util\luafilesystem.h" />
+    <ClInclude Include="..\Classes\util\lua_pack.h" />
+    <ClInclude Include="..\Classes\util\MD5.h" />
+    <ClInclude Include="..\Classes\util\MidiMsg.h" />
+    <ClInclude Include="..\Classes\util\mutex.h" />
+    <ClInclude Include="..\Classes\util\Mutex.hpp" />
+    <ClInclude Include="..\Classes\util\NetworkAdapter.h" />
+    <ClInclude Include="..\Classes\util\ObjectManager.h" />
+    <ClInclude Include="..\Classes\util\os_calls.h" />
+    <ClInclude Include="..\Classes\util\ParaMemPool.h" />
+    <ClInclude Include="..\Classes\util\ParaTime.h" />
+    <ClInclude Include="..\Classes\util\PoolBase.h" />
+    <ClInclude Include="..\Classes\util\regularexpression.h" />
+    <ClInclude Include="..\Classes\util\Report.h" />
+    <ClInclude Include="..\Classes\util\ScopedLock.h" />
+    <ClInclude Include="..\Classes\util\Semaphore.hpp" />
+    <ClInclude Include="..\Classes\util\SimpleTranslator.h" />
+    <ClInclude Include="..\Classes\util\stack_containers.hpp" />
+    <ClInclude Include="..\Classes\util\stdint_win32.h" />
+    <ClInclude Include="..\Classes\util\StringBuilder.h" />
+    <ClInclude Include="..\Classes\util\StringBuilder.hpp" />
+    <ClInclude Include="..\Classes\util\StringHelper.h" />
+    <ClInclude Include="..\Classes\util\Thread.hpp" />
+    <ClInclude Include="..\Classes\util\Tick.h" />
+    <ClInclude Include="..\Classes\util\tinyjson.hpp" />
+    <ClInclude Include="..\Classes\util\Type.h" />
+    <ClInclude Include="..\Classes\util\unordered_array.hpp" />
+    <ClInclude Include="..\proj.android\jni\hellolua\Java_org_cocos2dx_lua_LocalBridge.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="main.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\2dengine\EventBinding.cpp" />
+    <ClCompile Include="..\Classes\2dengine\FontRendererOpenGL.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIAttributeGrid.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIBase.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIButton.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIContainer.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIDirectInput.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIEdit.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIEvent.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIHighlight.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIIME.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIIMEDelegate.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIIMEEditBox.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIKeyboardVirtual.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIListBox.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIMouseVirtual.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIPosition.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIResource.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIRoot.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIScript.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIScrollBar.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUISlider.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIState.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIText.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIToolTip.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIUniBuffer.cpp" />
+    <ClCompile Include="..\Classes\2dengine\GUIWebBrowser.cpp" />
+    <ClCompile Include="..\Classes\2dengine\TextureParams.cpp" />
+    <ClCompile Include="..\Classes\2dengine\TouchGesturePinch.cpp" />
+    <ClCompile Include="..\Classes\2dengine\TouchSessions.cpp" />
+    <ClCompile Include="..\Classes\3dengine\AIBase.cpp" />
+    <ClCompile Include="..\Classes\3dengine\AIModuleNPC.cpp" />
+    <ClCompile Include="..\Classes\3dengine\AITasks.cpp" />
+    <ClCompile Include="..\Classes\3dengine\AnimInstanceBase.cpp" />
+    <ClCompile Include="..\Classes\3dengine\AttributeProvider.cpp" />
+    <ClCompile Include="..\Classes\3dengine\AudioEngine2.cpp" />
+    <ClCompile Include="..\Classes\3dengine\AutoCamera.cpp" />
+    <ClCompile Include="..\Classes\3dengine\BaseCamera.cpp" />
+    <ClCompile Include="..\Classes\3dengine\BaseObject.cpp" />
+    <ClCompile Include="..\Classes\3dengine\BatchedElementDraw.cpp" />
+    <ClCompile Include="..\Classes\3dengine\BillBoardViewInfo.cpp" />
+    <ClCompile Include="..\Classes\3dengine\BipedController.cpp" />
+    <ClCompile Include="..\Classes\3dengine\BipedObject.cpp" />
+    <ClCompile Include="..\Classes\3dengine\BipedStateManager.cpp" />
+    <ClCompile Include="..\Classes\3dengine\BipedWayPoint.cpp" />
+    <ClCompile Include="..\Classes\3dengine\BlockDynamicObject.cpp" />
+    <ClCompile Include="..\Classes\3dengine\BlockPieceParticle.cpp" />
+    <ClCompile Include="..\Classes\3dengine\BufferPicking.cpp" />
+    <ClCompile Include="..\Classes\3dengine\CameraFrustum.cpp" />
+    <ClCompile Include="..\Classes\3dengine\CanvasCamera.cpp" />
+    <ClCompile Include="..\Classes\3dengine\CharacterDB.cpp" />
+    <ClCompile Include="..\Classes\3dengine\ContainerObject.cpp" />
+    <ClCompile Include="..\Classes\3dengine\CustomCharCommon.cpp" />
+    <ClCompile Include="..\Classes\3dengine\CustomCharFace.cpp" />
+    <ClCompile Include="..\Classes\3dengine\CustomCharModelInstance.cpp" />
+    <ClCompile Include="..\Classes\3dengine\CustomCharRenderTarget.cpp" />
+    <ClCompile Include="..\Classes\3dengine\CustomCharSettings.cpp" />
+    <ClCompile Include="..\Classes\3dengine\DummyAnimInstance.cpp" />
+    <ClCompile Include="..\Classes\3dengine\EffectHelper.cpp" />
+    <ClCompile Include="..\Classes\3dengine\EnvironmentSim.cpp" />
+    <ClCompile Include="..\Classes\3dengine\FaceTrackingCtrler.cpp" />
+    <ClCompile Include="..\Classes\3dengine\Fog.cpp" />
+    <ClCompile Include="..\Classes\3dengine\IGameObject.cpp" />
+    <ClCompile Include="..\Classes\3dengine\IHeadOn3D.cpp" />
+    <ClCompile Include="..\Classes\3dengine\IRefObject.cpp" />
+    <ClCompile Include="..\Classes\3dengine\IViewClippingObject.cpp" />
+    <ClCompile Include="..\Classes\3dengine\KeyFrame.cpp" />
+    <ClCompile Include="..\Classes\3dengine\LightManager.cpp" />
+    <ClCompile Include="..\Classes\3dengine\LightObject.cpp" />
+    <ClCompile Include="..\Classes\3dengine\LightParam.cpp" />
+    <ClCompile Include="..\Classes\3dengine\light_scattering_data.cpp" />
+    <ClCompile Include="..\Classes\3dengine\ManagedLoader.cpp" />
+    <ClCompile Include="..\Classes\3dengine\MeshEntity.cpp" />
+    <ClCompile Include="..\Classes\3dengine\MeshObject.cpp" />
+    <ClCompile Include="..\Classes\3dengine\MeshPhysicsObject.cpp" />
+    <ClCompile Include="..\Classes\3dengine\MiniSceneGraph.cpp" />
+    <ClCompile Include="..\Classes\3dengine\MissileObject.cpp" />
+    <ClCompile Include="..\Classes\3dengine\MovieCtrlers.cpp" />
+    <ClCompile Include="..\Classes\3dengine\MoviePlatform.cpp" />
+    <ClCompile Include="..\Classes\3dengine\ObjectAutoReleasePool.cpp" />
+    <ClCompile Include="..\Classes\3dengine\ObjectEvent.cpp" />
+    <ClCompile Include="..\Classes\3dengine\OceanManager.cpp" />
+    <ClCompile Include="..\Classes\3dengine\OverlayObject.cpp" />
+    <ClCompile Include="..\Classes\3dengine\ParaEngineSettings.cpp" />
+    <ClCompile Include="..\Classes\3dengine\ParaMeshXMLFile.cpp" />
+    <ClCompile Include="..\Classes\3dengine\ParaPhysics.cpp" />
+    <ClCompile Include="..\Classes\3dengine\ParaXAnimInstance.cpp" />
+    <ClCompile Include="..\Classes\3dengine\ParaXEntity.cpp" />
+    <ClCompile Include="..\Classes\3dengine\ParaXModelCanvas.cpp" />
+    <ClCompile Include="..\Classes\3dengine\ParaXSerializer.cpp" />
+    <ClCompile Include="..\Classes\3dengine\PhysicsWorld.cpp" />
+    <ClCompile Include="..\Classes\3dengine\PortalFrustum.cpp" />
+    <ClCompile Include="..\Classes\3dengine\PortalNode.cpp" />
+    <ClCompile Include="..\Classes\3dengine\PredefinedEvents.cpp" />
+    <ClCompile Include="..\Classes\3dengine\RayCollider.cpp" />
+    <ClCompile Include="..\Classes\3dengine\RenderTarget.cpp" />
+    <ClCompile Include="..\Classes\3dengine\SceneObject.cpp" />
+    <ClCompile Include="..\Classes\3dengine\SceneObjectPicking.cpp" />
+    <ClCompile Include="..\Classes\3dengine\SceneState.cpp" />
+    <ClCompile Include="..\Classes\3dengine\SceneWriter.cpp" />
+    <ClCompile Include="..\Classes\3dengine\SelectionManager.cpp" />
+    <ClCompile Include="..\Classes\3dengine\SequenceCtler.cpp" />
+    <ClCompile Include="..\Classes\3dengine\SequenceEntity.cpp" />
+    <ClCompile Include="..\Classes\3dengine\SequenceManager.cpp" />
+    <ClCompile Include="..\Classes\3dengine\ShadowVolume.cpp" />
+    <ClCompile Include="..\Classes\3dengine\SkyMesh.cpp" />
+    <ClCompile Include="..\Classes\3dengine\SortedFaceGroups.cpp" />
+    <ClCompile Include="..\Classes\3dengine\SphereObject.cpp" />
+    <ClCompile Include="..\Classes\3dengine\SunLight.cpp" />
+    <ClCompile Include="..\Classes\3dengine\TerrainTile.cpp" />
+    <ClCompile Include="..\Classes\3dengine\TerrainTileRoot.cpp" />
+    <ClCompile Include="..\Classes\3dengine\TextureComposer.cpp" />
+    <ClCompile Include="..\Classes\3dengine\TileObject.cpp" />
+    <ClCompile Include="..\Classes\3dengine\ViewCullingObject.cpp" />
+    <ClCompile Include="..\Classes\3dengine\Viewport.cpp" />
+    <ClCompile Include="..\Classes\3dengine\ViewportManager.cpp" />
+    <ClCompile Include="..\Classes\3dengine\WeatherEffect.cpp" />
+    <ClCompile Include="..\Classes\3dengine\WeatherParticle.cpp" />
+    <ClCompile Include="..\Classes\3dengine\WeatherParticleSpawner.cpp" />
+    <ClCompile Include="..\Classes\3dengine\WorldInfo.cpp" />
+    <ClCompile Include="..\Classes\3dengine\XRefObject.cpp" />
+    <ClCompile Include="..\Classes\3dengine\ZoneNode.cpp" />
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\AutoUpdate\AssetsManager.cpp" />
+    <ClCompile Include="..\Classes\AutoUpdate\AssetsManagerGlobal.cpp" />
+    <ClCompile Include="..\Classes\AutoUpdate\AssetsWorker.cpp" />
+    <ClCompile Include="..\Classes\AutoUpdate\AutoUpdater.cpp" />
+    <ClCompile Include="..\Classes\AutoUpdate\Downloader.cpp" />
+    <ClCompile Include="..\Classes\AutoUpdate\PeFileUtils.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockChunk.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockCommon.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockConfig.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockCoordinate.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockDataCodec.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockDirection.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockFacing.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockLightGridBase.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockLightGridClient.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockLightGridServer.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockModel.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockModelManager.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockModelProvider.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockReadWriteLock.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockRegion.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockRenderTask.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockTemplate.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockTessellators.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockWorld.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockWorldClient.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\BlockWorldManager.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\CarpetModelProvider.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\ChunkMaxHeight.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\ChunkVertexBuilderManager.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\MultiFrameBlockWorldRenderer.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\RenderableChunk.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\SlopeModelProvider.cpp" />
+    <ClCompile Include="..\Classes\BlockEngine\WireModelProvider.cpp" />
+    <ClCompile Include="..\Classes\BMaxModel\BMaxAnimGenerator.cpp" />
+    <ClCompile Include="..\Classes\BMaxModel\BMaxBlockModelNode.cpp" />
+    <ClCompile Include="..\Classes\BMaxModel\BMaxFrameNode.cpp" />
+    <ClCompile Include="..\Classes\BMaxModel\BMaxNode.cpp" />
+    <ClCompile Include="..\Classes\BMaxModel\BMaxObject.cpp" />
+    <ClCompile Include="..\Classes\BMaxModel\BMaxParser.cpp" />
+    <ClCompile Include="..\Classes\CGUIRootLayer.cpp" />
+    <ClCompile Include="..\Classes\CocosKeyMap.cpp" />
+    <ClCompile Include="..\Classes\Core\AssetEntity.cpp" />
+    <ClCompile Include="..\Classes\Core\AttributeClass.cpp" />
+    <ClCompile Include="..\Classes\Core\AttributeField.cpp" />
+    <ClCompile Include="..\Classes\Core\AttributesManager.cpp" />
+    <ClCompile Include="..\Classes\Core\BootStrapper.cpp" />
+    <ClCompile Include="..\Classes\Core\CommandLineParams.cpp" />
+    <ClCompile Include="..\Classes\Core\ContentLoaderCCSFace.cpp" />
+    <ClCompile Include="..\Classes\Core\ContentLoaderCCSSkin.cpp" />
+    <ClCompile Include="..\Classes\Core\ContentLoaderMesh.cpp" />
+    <ClCompile Include="..\Classes\Core\ContentLoaderParaX.cpp" />
+    <ClCompile Include="..\Classes\Core\ContentLoaderTexture.cpp" />
+    <ClCompile Include="..\Classes\Core\DatabaseEntity.cpp" />
+    <ClCompile Include="..\Classes\Core\DataProviderManager.cpp" />
+    <ClCompile Include="..\Classes\Core\DynamicAttributeField.cpp" />
+    <ClCompile Include="..\Classes\Core\DynamicAttributesSet.cpp" />
+    <ClCompile Include="..\Classes\Core\DynamicVertexBufferEntityDirectX.cpp" />
+    <ClCompile Include="..\Classes\Core\DynamicVertexBufferEntityOpenGL.cpp" />
+    <ClCompile Include="..\Classes\Core\DynamicVertexBufferManager.cpp" />
+    <ClCompile Include="..\Classes\Core\EventClasses.cpp" />
+    <ClCompile Include="..\Classes\Core\EventHandler.cpp" />
+    <ClCompile Include="..\Classes\Core\EventsCenter.cpp" />
+    <ClCompile Include="..\Classes\Core\FrameRateController.cpp" />
+    <ClCompile Include="..\Classes\Core\Globals.cpp" />
+    <ClCompile Include="..\Classes\Core\IAnimated.cpp" />
+    <ClCompile Include="..\Classes\Core\IAttributeFields.cpp" />
+    <ClCompile Include="..\Classes\Core\ImageEntity.cpp" />
+    <ClCompile Include="..\Classes\Core\IPCManager.cpp" />
+    <ClCompile Include="..\Classes\Core\luaSQLite.cpp" />
+    <ClCompile Include="..\Classes\Core\MiscEntity.cpp" />
+    <ClCompile Include="..\Classes\Core\ParaEngine.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\ParaEngineAppBase.cpp" />
+    <ClCompile Include="..\Classes\Core\ParaEngineCore.cpp" />
+    <ClCompile Include="..\Classes\Core\ParaEngineInfo.cpp" />
+    <ClCompile Include="..\Classes\Core\ParaEngineService.cpp" />
+    <ClCompile Include="..\Classes\Core\ParameterBlock.cpp" />
+    <ClCompile Include="..\Classes\Core\ParaWorldAsset.cpp" />
+    <ClCompile Include="..\Classes\Core\PERef.cpp" />
+    <ClCompile Include="..\Classes\Core\Platforms.cpp" />
+    <ClCompile Include="..\Classes\Core\PluginAPI.cpp" />
+    <ClCompile Include="..\Classes\Core\PluginManager.cpp" />
+    <ClCompile Include="..\Classes\Core\SpriteFontEntity.cpp" />
+    <ClCompile Include="..\Classes\Core\SpriteFontEntityDirectX.cpp" />
+    <ClCompile Include="..\Classes\Core\SpriteFontEntityOpenGL.cpp" />
+    <ClCompile Include="..\Classes\Core\TextureEntity.cpp" />
+    <ClCompile Include="..\Classes\Core\TextureEntityDirectX.cpp" />
+    <ClCompile Include="..\Classes\Core\TextureEntityOpenGL.cpp" />
+    <ClCompile Include="..\Classes\Core\TouchEventSession.cpp" />
+    <ClCompile Include="..\Classes\Core\UrlLoaders.cpp" />
+    <ClCompile Include="..\Classes\Core\Variable.cpp" />
+    <ClCompile Include="..\Classes\curllua\curl_error.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\curllua\Lua-cURL-callback.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\curllua\Lua-cURL-getinfo.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\curllua\Lua-cURL-multi.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\curllua\Lua-cURL-post.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\curllua\Lua-cURL-setopt.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\curllua\Lua-cURL-share.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\curllua\Lua-cURL.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\curllua\Lua-utility.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\debugtools\paradebug.cpp" />
+    <ClCompile Include="..\Classes\debugtools\Profiler.cpp" />
+    <ClCompile Include="..\Classes\Engine\ParaEngineApp.cpp" />
+    <ClCompile Include="..\Classes\ic\ICConfigManager.cpp" />
+    <ClCompile Include="..\Classes\ic\ICDBManager.cpp" />
+    <ClCompile Include="..\Classes\ic\ICRecordSet.cpp" />
+    <ClCompile Include="..\Classes\ic\SQLStatement.cpp" />
+    <ClCompile Include="..\Classes\IO\Archive.cpp" />
+    <ClCompile Include="..\Classes\IO\AssetManifest.cpp" />
+    <ClCompile Include="..\Classes\IO\AsyncLoader.cpp" />
+    <ClCompile Include="..\Classes\IO\FileData.cpp" />
+    <ClCompile Include="..\Classes\IO\FileHandle.cpp" />
+    <ClCompile Include="..\Classes\IO\FileLogger.cpp" />
+    <ClCompile Include="..\Classes\IO\FileManager.cpp" />
+    <ClCompile Include="..\Classes\IO\FilePath.cpp" />
+    <ClCompile Include="..\Classes\IO\FileSearchResult.cpp" />
+    <ClCompile Include="..\Classes\IO\FileSystemWatcher.cpp" />
+    <ClCompile Include="..\Classes\IO\FileUtils.cpp" />
+    <ClCompile Include="..\Classes\IO\MemReadFile.cpp" />
+    <ClCompile Include="..\Classes\IO\ParaFile.cpp" />
+    <ClCompile Include="..\Classes\IO\ReadFile.cpp" />
+    <ClCompile Include="..\Classes\IO\ZipArchive.cpp" />
+    <ClCompile Include="..\Classes\IO\ZipWriter.cpp" />
+    <ClCompile Include="..\Classes\jsoncpp\src\lib_json\json_reader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\jsoncpp\src\lib_json\json_value.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\jsoncpp\src\lib_json\json_writer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\class.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\class_info.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\class_registry.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\class_rep.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\create_class.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\error.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\exception_handler.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\function.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\inheritance.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\link_compatibility.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\object_rep.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\open.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\pcall.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\scope.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\stack_content_by_name.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\weak_ref.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\wrapper_base.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MainLoopTimer.cpp" />
+    <ClCompile Include="..\Classes\math\AABBCollider.cpp" />
+    <ClCompile Include="..\Classes\math\Collider.cpp" />
+    <ClCompile Include="..\Classes\math\ParaAxisAlignedBox.cpp" />
+    <ClCompile Include="..\Classes\math\ParaColor.cpp" />
+    <ClCompile Include="..\Classes\math\ParaLine.cpp" />
+    <ClCompile Include="..\Classes\math\ParaMargins.cpp" />
+    <ClCompile Include="..\Classes\math\ParaMath.cpp" />
+    <ClCompile Include="..\Classes\math\ParaMathMatrix.cpp" />
+    <ClCompile Include="..\Classes\math\ParaMathMisc.cpp" />
+    <ClCompile Include="..\Classes\math\ParaMathVector.cpp" />
+    <ClCompile Include="..\Classes\math\ParaMatrix3.cpp" />
+    <ClCompile Include="..\Classes\math\ParaMatrix4.cpp" />
+    <ClCompile Include="..\Classes\math\ParaPlane.cpp" />
+    <ClCompile Include="..\Classes\math\ParaPoint.cpp" />
+    <ClCompile Include="..\Classes\math\ParaQuaternion.cpp" />
+    <ClCompile Include="..\Classes\math\ParaRect.cpp" />
+    <ClCompile Include="..\Classes\math\ParaSize.cpp" />
+    <ClCompile Include="..\Classes\math\ParaVector2.cpp" />
+    <ClCompile Include="..\Classes\math\ParaVector3.cpp" />
+    <ClCompile Include="..\Classes\math\ParaVector4.cpp" />
+    <ClCompile Include="..\Classes\math\ShapeAABB.cpp" />
+    <ClCompile Include="..\Classes\math\ShapeCone.cpp" />
+    <ClCompile Include="..\Classes\math\ShapeFrustum.cpp" />
+    <ClCompile Include="..\Classes\math\ShapeOBB.cpp" />
+    <ClCompile Include="..\Classes\math\ShapeRay.cpp" />
+    <ClCompile Include="..\Classes\math\ShapeSphere.cpp" />
+    <ClCompile Include="..\Classes\NPL\AISimulator.cpp" />
+    <ClCompile Include="..\Classes\NPL\NeuronFileState.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLActivationFile.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLCodec.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLCommon.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLCompiler.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLConfig.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLConnection.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLConnectionManager.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLDispatcher.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLHelper.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLMemPool.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLMessage.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLMessageQueue.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLMsgIn_parser.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLMsgOut.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLNetClient.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLNetServer.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLParser.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLRuntime.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLRuntimeState.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLScriptingState.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLStateMemAllocator.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLTable.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPLWriter.cpp" />
+    <ClCompile Include="..\Classes\NPL\NPL_imp.cpp" />
+    <ClCompile Include="..\Classes\PaintEngine\PaintDevice.cpp" />
+    <ClCompile Include="..\Classes\PaintEngine\PaintEngine.cpp" />
+    <ClCompile Include="..\Classes\PaintEngine\PaintEngineGPU.cpp" />
+    <ClCompile Include="..\Classes\PaintEngine\PaintEngineGPUState.cpp" />
+    <ClCompile Include="..\Classes\PaintEngine\PaintEngineRaster.cpp" />
+    <ClCompile Include="..\Classes\PaintEngine\Painter.cpp" />
+    <ClCompile Include="..\Classes\PaintEngine\PainterState.cpp" />
+    <ClCompile Include="..\Classes\PaintEngine\ParaRegion.cpp" />
+    <ClCompile Include="..\Classes\PaintEngine\qbrush.cpp" />
+    <ClCompile Include="..\Classes\PaintEngine\qfont.cpp" />
+    <ClCompile Include="..\Classes\PaintEngine\qmatrix.cpp" />
+    <ClCompile Include="..\Classes\PaintEngine\qpainterpath.cpp" />
+    <ClCompile Include="..\Classes\PaintEngine\qpen.cpp" />
+    <ClCompile Include="..\Classes\PaintEngine\qpolygon.cpp" />
+    <ClCompile Include="..\Classes\PaintEngine\qtransform.cpp" />
+    <ClCompile Include="..\Classes\PaintEngine\qvectorpath.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\IObjectScriptingInterface.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\local_bridge_manual.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScripting.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScripting2.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScripting3.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScripting4.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScripting5.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingAudio.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingBlockWorld.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingBrowserManager.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingCharacter.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingCommon.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingFlashPlayer.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingGlobal.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingGraphics.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingGUI.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingHTMLBrowser.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingIC.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingIO.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingIPC.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingMisc.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingMovie.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingNetwork.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingNPL.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingPainter.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingScene.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingTerrain.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingTest.cpp" />
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingWorld.cpp" />
+    <ClCompile Include="..\Classes\ParaSimpleAudioEngine.cpp" />
+    <ClCompile Include="..\Classes\ParaSimpleAudioSource.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\AnimTable.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\BoneAnimProvider.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\BoneChain.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\ColladaModelLoader.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\FBXModelInfo.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\FBXParser.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\ModelRenderPass.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\ParaXBone.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\ParaXModel.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\ParaXModelCommon.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\ParaXModelExporter.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\ParaXStaticModel.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\ParaXStaticModelRenderPass.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\particle.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\ParticleSystemRef.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\TextureAnim.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\XFileCharModelParser.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\XFileDataObject.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\XFileHelper.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\XFileParser.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\XFileStaticModelParser.cpp" />
+    <ClCompile Include="..\Classes\platform\ios\LocalBridgePB.pb.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Classes\platform\ios\LocalBridge_ios.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Classes\protocol\pb.cpp" />
+    <ClCompile Include="..\Classes\renderer\EffectManager.cpp" />
+    <ClCompile Include="..\Classes\renderer\effect_file_DirectX.cpp" />
+    <ClCompile Include="..\Classes\renderer\effect_file_OpenGL.cpp" />
+    <ClCompile Include="..\Classes\renderer\ParaVertexBuffer.cpp" />
+    <ClCompile Include="..\Classes\renderer\ParaVertexBufferPool.cpp" />
+    <ClCompile Include="..\Classes\renderer\RenderDevice.cpp" />
+    <ClCompile Include="..\Classes\renderer\RenderDeviceDirectX.cpp" />
+    <ClCompile Include="..\Classes\renderer\RenderDeviceOpenGL.cpp" />
+    <ClCompile Include="..\Classes\renderer\SpriteRenderer.cpp" />
+    <ClCompile Include="..\Classes\renderer\SpriteRendererDirectX.cpp" />
+    <ClCompile Include="..\Classes\renderer\SpriteRendererOpenGL.cpp" />
+    <ClCompile Include="..\Classes\renderer\VertexDeclarationOpenGL.cpp" />
+    <ClCompile Include="..\Classes\renderer\VertexFVF.cpp" />
+    <ClCompile Include="..\Classes\terrain\Brush.cpp" />
+    <ClCompile Include="..\Classes\terrain\DetailTexture.cpp" />
+    <ClCompile Include="..\Classes\terrain\DetailTextureFactory.cpp" />
+    <ClCompile Include="..\Classes\terrain\DynamicTerrainLoader.cpp" />
+    <ClCompile Include="..\Classes\terrain\GlobalTerrain.cpp" />
+    <ClCompile Include="..\Classes\terrain\Loader.cpp" />
+    <ClCompile Include="..\Classes\terrain\Settings.cpp" />
+    <ClCompile Include="..\Classes\terrain\Terrain.cpp" />
+    <ClCompile Include="..\Classes\terrain\TerrainBlock.cpp" />
+    <ClCompile Include="..\Classes\terrain\TerrainBuffer.cpp" />
+    <ClCompile Include="..\Classes\terrain\TerrainCommon.cpp" />
+    <ClCompile Include="..\Classes\terrain\TerrainFilters.cpp" />
+    <ClCompile Include="..\Classes\terrain\TerrainGeoMipmapIndices.cpp" />
+    <ClCompile Include="..\Classes\terrain\TerrainLattice.cpp" />
+    <ClCompile Include="..\Classes\terrain\TerrainRegions.cpp" />
+    <ClCompile Include="..\Classes\terrain\TerrainVertex.cpp" />
+    <ClCompile Include="..\Classes\terrain\Texture.cpp" />
+    <ClCompile Include="..\Classes\terrain\TextureCell.cpp" />
+    <ClCompile Include="..\Classes\terrain\TextureFactory.cpp" />
+    <ClCompile Include="..\Classes\terrain\TextureGenerator.cpp" />
+    <ClCompile Include="..\Classes\terrain\TextureSet.cpp" />
+    <ClCompile Include="..\Classes\terrain\Triangle.cpp" />
+    <ClCompile Include="..\Classes\terrain\TriangleFan.cpp" />
+    <ClCompile Include="..\Classes\terrain\TriangleStrip.cpp" />
+    <ClCompile Include="..\Classes\terrain\TTerrain.cpp" />
+    <ClCompile Include="..\Classes\terrain\WorldNameFactory.cpp" />
+    <ClCompile Include="..\Classes\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="..\Classes\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="..\Classes\tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="..\Classes\util\bitlib_lua.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\CommonFileDialog.cpp" />
+    <ClCompile Include="..\Classes\util\ConvertUTF.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\ConvertUTFWrapper.cpp" />
+    <ClCompile Include="..\Classes\util\CyoDecode.cpp" />
+    <ClCompile Include="..\Classes\util\CyoEncode.cpp" />
+    <ClCompile Include="..\Classes\util\dl_malloc.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\FastRandom.cpp" />
+    <ClCompile Include="..\Classes\util\HttpUtility.cpp" />
+    <ClCompile Include="..\Classes\util\intrusive_ptr.cpp" />
+    <ClCompile Include="..\Classes\util\IObjectDrag.cpp" />
+    <ClCompile Include="..\Classes\util\keyboard.cpp" />
+    <ClCompile Include="..\Classes\util\Log.cpp" />
+    <ClCompile Include="..\Classes\util\LogService.cpp" />
+    <ClCompile Include="..\Classes\util\luafilesystem.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\lua_pack.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\MD5.cpp" />
+    <ClCompile Include="..\Classes\util\MidiMsg.cpp" />
+    <ClCompile Include="..\Classes\util\NetworkAdapter.cpp" />
+    <ClCompile Include="..\Classes\util\ObjectManager.cpp" />
+    <ClCompile Include="..\Classes\util\os_calls.cpp" />
+    <ClCompile Include="..\Classes\util\ParaMemPool.cpp" />
+    <ClCompile Include="..\Classes\util\ParaTime.cpp" />
+    <ClCompile Include="..\Classes\util\Report.cpp" />
+    <ClCompile Include="..\Classes\util\StringBuilder.cpp" />
+    <ClCompile Include="..\Classes\util\StringHelper.cpp" />
+    <ClCompile Include="..\Classes\util\Tick.cpp" />
+    <ClCompile Include="..\Classes\util\Type.cpp" />
+    <ClCompile Include="..\proj.android\jni\hellolua\Java_org_cocos2dx_lua_LocalBridge.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\proj.android\jni\hellolua\main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\game.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Classes\jsoncpp\src\lib_json\json_internalarray.inl" />
+    <None Include="..\Classes\jsoncpp\src\lib_json\json_internalmap.inl" />
+    <None Include="..\Classes\jsoncpp\src\lib_json\json_valueiterator.inl" />
+    <None Include="..\Classes\math\ParaAngle.inl" />
+    <None Include="..\Classes\math\ParaVector3.inl" />
+    <None Include="..\Classes\math\ParaVector4.inl" />
+    <None Include="..\Classes\ParaXModel\ParaXmodel.templates" />
+    <None Include="..\Classes\ParaXModel\XFileParsing.inl" />
+    <None Include="..\Classes\platform\ios\LocalBridgeHandler.mm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Classes\shaders\blockMaxEffect.shader" />
+    <None Include="..\Classes\shaders\blockEffect.shader" />
+    <None Include="..\Classes\shaders\blockSelectEffect.shader" />
+    <None Include="..\Classes\shaders\guiEffect.shader" />
+    <None Include="..\Classes\shaders\guiTextEffect.shader" />
+    <None Include="..\Classes\shaders\meshNormalEffect.shader" />
+    <None Include="..\Classes\shaders\particleEffect.shader" />
+    <None Include="..\Classes\shaders\singleColorEffect.shader" />
+    <None Include="..\Classes\shaders\skydomeEffect.shader" />
+    <None Include="..\Classes\shaders\skymeshEffect.shader" />
+    <None Include="..\Classes\shaders\terrainEffect.shader" />
+    <None Include="..\proj.android\jni\Android.mk" />
+    <None Include="..\proj.android\jni\Application.mk" />
+    <None Include="..\proj.android\jni\ParaEngineCore.mk" />
+    <None Include="..\proj.android\jni\ParaEngineGraphics.mk" />
+    <None Include="..\proj.android\src\org\cocos2dx\lua\AppActivity.java" />
+    <None Include="..\proj.ios_mac\buildboost_ios.sh" />
+    <None Include="..\proj.shell\AppBuilder.py" />
+    <None Include="..\proj.shell\build.py" />
+    <None Include="..\proj.shell\NPLCompiler.py" />
+    <None Include="..\proj.shell\PerpetualTimer.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Classes\changes.txt" />
+    <Text Include="..\Classes\NPL\NPL_readme.txt" />
+    <Text Include="..\Classes\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Classes\NPL\sample.config.xml" />
+    <Xml Include="..\proj.android\AndroidManifest.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

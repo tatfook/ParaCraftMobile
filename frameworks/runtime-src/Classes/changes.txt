@@ -1,0 +1,7 @@
+---++ ParaCraftMobile
+Copyright 2004-2014 ParaEngine Co.
+
+2014.8.23
+
+2014.8.23
+	- math lib synced. 

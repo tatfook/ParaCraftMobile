@@ -1,0 +1,9 @@
+doc/
+boost/
+ffmpeg*/
+FreeImage*/
+bin/
+cAudioEngine_android/
+cAudioEngine_ios/
+*.zip
+*.7z

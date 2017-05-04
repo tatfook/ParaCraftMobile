@@ -1,0 +1,3291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{fc5cb953-2953-4968-83b3-39e3ff951754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{037a9a02-b906-4cc5-ad98-304acd4e25ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{738811f6-bc18-4212-b94e-2a50b0be6232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{88aebaad-10db-43e5-8e30-04f06b6038be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{cf30e0c4-7edd-4f59-971a-ffa3f110b0dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NPL">
+      <UniqueIdentifier>{6de44b35-6f4c-42bb-8d4a-34ec7ae2eb0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ParaScriptBindings">
+      <UniqueIdentifier>{87e32678-d39c-4bd9-908f-141c1bc0c681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO">
+      <UniqueIdentifier>{b39adc24-5a1e-4986-b786-455c796a1346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Externals">
+      <UniqueIdentifier>{8865a7e7-6eec-4f41-8a21-6e9ebe46339f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Externals\paradebug">
+      <UniqueIdentifier>{d40d6ee1-bcf1-4229-bad8-5e5179403b75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Externals\luabind">
+      <UniqueIdentifier>{013db299-70b8-4ff7-983a-f33c3eae1d10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Externals\jsoncpp">
+      <UniqueIdentifier>{168c56c7-2434-477c-af0c-541e4f58eef5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Externals\jsoncpp\include">
+      <UniqueIdentifier>{039330d1-070e-4225-a0cf-7b449e709b3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Externals\jsoncpp\src">
+      <UniqueIdentifier>{95e11873-1a0c-46d1-9607-e55fb978062c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Externals\ic">
+      <UniqueIdentifier>{a7aac779-aec3-401a-9605-2de27de3f902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Externals\dir_monitor">
+      <UniqueIdentifier>{b5694e51-6cb9-497d-a294-69c39b5c96d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Externals\curllua">
+      <UniqueIdentifier>{c807f1f6-bca2-42dd-a90b-10fbbc42802b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Externals\resource">
+      <UniqueIdentifier>{2d1d0979-58cd-4ab6-b91c-13650158f1fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{a1e8daa8-969e-41d6-b7f5-620c53f37060}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2dengine">
+      <UniqueIdentifier>{0e8d5266-bb3a-4371-9a2a-b708a5740a42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3dengine">
+      <UniqueIdentifier>{5ed1c57a-d11a-43c2-8f49-cc5e19a7fa3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3dengine\ParaXModel">
+      <UniqueIdentifier>{fc9d673b-aed9-4cd2-8de4-4d1a60e5270b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="terrain">
+      <UniqueIdentifier>{a97cc49f-36f9-449b-98a7-7892b114d348}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BlockEngine">
+      <UniqueIdentifier>{3ab23a32-b94f-4672-a34f-1209b320ee79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{37d2c584-8aad-476c-8272-980bfd3b0d87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="renderer">
+      <UniqueIdentifier>{6e7366da-1785-4f77-9b2f-e4849c97a110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proj.android">
+      <UniqueIdentifier>{c04e7a48-f1c0-4bb6-ae51-0d6ef0ec58d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proj.android\jni">
+      <UniqueIdentifier>{ebadeb24-3c03-4fa1-bb3e-4d532201fa8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proj.android\src">
+      <UniqueIdentifier>{32fbed68-c205-407c-997e-019e05c091f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proj.android\src\org">
+      <UniqueIdentifier>{e87d68cc-0e50-4181-8bb4-76920a45c1f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proj.android\src\org\cocos2dx">
+      <UniqueIdentifier>{382f9f88-e017-4965-8549-e8f61db34da3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proj.android\src\org\cocos2dx\lua">
+      <UniqueIdentifier>{7e500578-fc2a-4358-b15a-227a03028d9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proj.ios_mac">
+      <UniqueIdentifier>{9d0833b1-d621-4e57-86bf-3c37ba01c4cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{1167d0bd-e697-45e2-95a6-00b3f2dda87d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proj.shell">
+      <UniqueIdentifier>{27b01720-2832-447d-a10d-01fcb06b015c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PaintEngine">
+      <UniqueIdentifier>{df31c438-8728-4e62-b73e-58d0f0418a02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proj.android\jni\hellolua">
+      <UniqueIdentifier>{2bfdcddd-7648-42cd-bcd3-660e08a0d22a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform">
+      <UniqueIdentifier>{4b9c3007-8653-41c2-b0b8-c54ad19675ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\ios">
+      <UniqueIdentifier>{89ecd15e-ec73-4a0f-80e6-7894a961b6ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AutoUpdate">
+      <UniqueIdentifier>{318f4529-630a-410d-b4f3-6057f22b5ccc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3dengine\BMaxModel">
+      <UniqueIdentifier>{1892faf0-76a3-4c19-bbe6-5ac940b2e2b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Externals\tinyxml">
+      <UniqueIdentifier>{346cc909-e3d2-4954-83b9-a7b0a71740e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\bitlib_lua.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\CyoDecode.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\CyoEncode.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\fixed_string.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\HttpUtility.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\intrusive_ptr.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\keyboard.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\Log.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\LogService.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\luafilesystem.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\MD5.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\mutex.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\Mutex.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\os_calls.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\ParaMemPool.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\ParaTime.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\PoolBase.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\regularexpression.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\Report.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\Semaphore.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\stack_containers.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\StringBuilder.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\StringBuilder.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\StringHelper.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\Thread.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\tinyjson.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\asm_math.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaAxisAlignedBox.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaMath.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaMatrix3.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaMatrix4.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaPlane.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaPlaneBoundedVolume.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaQuaternion.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaRay.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaSphere.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaVector2.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaVector3.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaVector4.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ic\ICConfigManager.h">
+      <Filter>Externals\ic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ic\ICDBManager.h">
+      <Filter>Externals\ic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ic\ICRecordSet.h">
+      <Filter>Externals\ic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ic\ParaDatabase.h">
+      <Filter>Externals\ic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ic\SQLStatement.h">
+      <Filter>Externals\ic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\dir_monitor\basic_dir_monitor.hpp">
+      <Filter>Externals\dir_monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\dir_monitor\dir_monitor.hpp">
+      <Filter>Externals\dir_monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\curllua\curl_error.h">
+      <Filter>Externals\curllua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\curllua\Lua-cURL.h">
+      <Filter>Externals\curllua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\curllua\Lua-cURL-share.h">
+      <Filter>Externals\curllua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\curllua\Lua-utility.h">
+      <Filter>Externals\curllua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\jsoncpp\include\json\autolink.h">
+      <Filter>Externals\jsoncpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\jsoncpp\include\json\config.h">
+      <Filter>Externals\jsoncpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\jsoncpp\include\json\features.h">
+      <Filter>Externals\jsoncpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\jsoncpp\include\json\forwards.h">
+      <Filter>Externals\jsoncpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\jsoncpp\include\json\json.h">
+      <Filter>Externals\jsoncpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\jsoncpp\include\json\reader.h">
+      <Filter>Externals\jsoncpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\jsoncpp\include\json\value.h">
+      <Filter>Externals\jsoncpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\jsoncpp\include\json\writer.h">
+      <Filter>Externals\jsoncpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\jsoncpp\src\lib_json\json_batchallocator.h">
+      <Filter>Externals\jsoncpp\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\AISimulator.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPL_imp.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLCodec.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLCommon.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLCompiler.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLConfig.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLConnection.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLConnectionManager.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLDispatcher.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLHelper.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLMemPool.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLMessage.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLMessageQueue.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLMsgHeader.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLMsgIn.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLMsgIn_parser.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLMsgOut.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLNetClient.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLNetServer.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLParser.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLRuntime.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLRuntimeState.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLScriptingState.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLStateMemAllocator.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLStruct_obsoleted.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLTable.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLWriter.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Engine\ParaEngineClientConfig.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Engine\ParaEngineClientConfig.win32.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\debugtools\paradebug.h">
+      <Filter>Externals\paradebug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\debugtools\Profiler.h">
+      <Filter>Externals\paradebug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MainLoopTimer.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScripting.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingCommon.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingGlobal.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingIC.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingIO.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingIPC.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingMisc.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingNetwork.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingNPL.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IO\Archive.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IO\AssetManifest.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IO\AsyncLoader.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IO\FileData.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IO\FileHandle.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IO\FileLogger.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IO\FileManager.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IO\FilePath.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IO\FileSearchResult.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IO\FileSystemWatcher.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IO\FileUtils.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IO\IDataLoader.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IO\MemReadFile.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IO\ParaFile.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IO\ZipArchive.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IO\ReadFile.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\CommonFileDialog.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\cow_ptr.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\dl_malloc.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\dl_malloc_include.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\EnumProcess.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\MidiMsg.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\NetworkAdapter.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\stdint_win32.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaAngle.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaColor.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaMathMatrix.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaMathMisc.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaMathUtility.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaMathVector.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\AABBCollider.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\Collider.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaViewport.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ShapeAABB.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ShapeCone.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ShapeFrustum.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ShapeOBB.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ShapeRay.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ShapeSphere.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\FPU.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Externals\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\AssetEntity.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\AssetManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\baseinterface.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\BootStrapper.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\CommandLineParams.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\CommandLineParser.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\coreexport.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\Globals.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\IAttributeFields.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\IBatchedElementDraw.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\IEnvironmentSim.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\IInfoCenter.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\IMovieCodec.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\INPL.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\INPLRuntime.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\INPLRuntimeState.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\INPLScriptingState.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\InterprocessMsg.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\InterprocessQueue.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\IParaAudioEngine.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\IParaDebugDraw.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\IParaEngineApp.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\IParaEngineCore.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\IParaPhysics.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\IParaWebPlayer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\IParaWebService.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ipc_message_queue.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\memdebug.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\NPLInterface.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\NPLMiniRuntime.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\NPLTypes.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ParaEngine.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ParaPlatformConfig.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ParaUtils.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\PEtypes.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\PluginAPI.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\PluginLoader.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\PluginManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\TextureEntity.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\TextureEntityDirectX.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\TextureEntityOpenGL.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\UrlLoaders.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\EventHandler.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\Events_def.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\EventsCenter.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\FrameRateController.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\Platforms.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\SpriteFontEntityOpenGL.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\SpriteFontEntityDirectX.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\SpriteFontEntity.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ParaWorldAsset.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ParameterBlock.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ParaEngineInfo.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\luaSQLite.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\IPCManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\AttributesManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\AttributeClassIDTable.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\Array.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\DatabaseEntity.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\MiscEntity.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\CopyOnWriteHolder.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\CSingleton.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\ICollection.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\IObjectDrag.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\ObjectManager.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\Type.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\EventBinding.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GrowableArray.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIAttributeGrid.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIBase.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIButton.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIContainer.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIDirectInput.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIEdit.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIEvent.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIHighlight.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIIME.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIIMEEditBox.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIListBox.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIPosition.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIResource.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIRoot.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIScript.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUISlider.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIState.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIText.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIToolTip.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIUniBuffer.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIWebBrowser.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ObjScriptPool.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\IObjectScriptingInterface.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingAudio.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingBlockWorld.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingCharacter.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingGUI.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingMovie.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingScene.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingTerrain.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingWorld.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Engine\ParaEngineApp.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CGUIRootLayer.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\FontRendererOpenGL.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\ConvertUTF.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\animated.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\AnimTable.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\BoneAnimProvider.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\BoneChain.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\ColladaModelLoader.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\modelheaders.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\ModelRenderPass.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\ParaXBone.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\ParaXModel.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\ParaXModelCommon.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\ParaXModelInstance.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\particle.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\ParticleSystemRef.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\TextureAnim.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\ParaXAnimInstance.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\BaseObject.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\IRefObject.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\IScene.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\IViewClippingObject.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\SceneObject.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\SceneObjectPicking.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\sceneRenderList.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\SceneState.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\SceneWriter.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\SortedFaceGroups.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\ViewCullingObject.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\SunLight.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\light_scattering_data.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\Viewport.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\ViewportManager.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\ZoneNode.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\PortalNode.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\Brush.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\DetailTexture.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\DetailTextureFactory.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\DynamicTerrainLoader.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\GlobalTerrain.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\ImageLoader.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\Loader.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\Settings.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\Terrain.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\TerrainBlock.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\TerrainCommon.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\TerrainConfig.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\TerrainException.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\TerrainFilters.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\TerrainGeoMipmapIndices.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\TerrainLattice.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\TerrainLoadListener.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\TerrainRegions.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\TerrainVertex.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\Texture.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\TextureCell.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\TextureFactory.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\TextureGenerator.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\TextureSet.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\Triangle.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\TriangleFan.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\TriangleStrip.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\TTerrain.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\WorldNameFactory.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\WorldInfo.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\MeshEntity.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\PhysicsWorld.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\XRefObject.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\MeshObject.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\MeshPhysicsObject.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\ParaEngineSettings.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\ParaMeshXMLFile.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\ParaXEntity.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\ParaXSerializer.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\SelectionManager.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\PredefinedEvents.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\BatchedElementDraw.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\EnvironmentSim.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\BipedController.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\BipedObject.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\BipedStateManager.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\IGameObject.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\IHeadOn3D.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\KeyFrame.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\AIBase.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\AIModuleNPC.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\AITasks.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\FaceTrackingCtrler.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\MovieCtrlers.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\SequenceCtler.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\SequenceEntity.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockChunk.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockCommon.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockConfig.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockCoordinate.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockDataCodec.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockLightGridBase.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockLightGridClient.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockLightGridServer.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockModel.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockModelProvider.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockRegion.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockRenderTask.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockTemplate.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockWorld.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockWorldClient.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockWorldManager.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\RenderableChunk.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\OceanManager.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\MiniSceneGraph.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\CanvasCamera.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\ManagedDef.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\ManagedLoader.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\LightManager.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\AnimInstanceBase.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\AttributeProvider.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\AutoCamera.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\BaseCamera.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\LightParam.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\PortalFrustum.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\RayCollider.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\SequenceManager.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\ShadowVolume.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\SkyMesh.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\TerrainTile.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\terrain\TerrainBuffer.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\SphereObject.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\AudioEngine2.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\ParaPhysics.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\renderer\effect_file.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\renderer\effect_file_DirectX.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\renderer\effect_file_OpenGL.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\renderer\ParaVertexBuffer.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\renderer\RenderCore.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\renderer\RenderCoreOpenGL.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\renderer\RenderDevice.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\renderer\RenderDeviceDirectX.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\renderer\RenderDeviceOpenGL.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\renderer\SpriteRenderer.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\renderer\SpriteRendererDirectX.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\renderer\SpriteRendererOpenGL.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\renderer\VertexDeclaration.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\renderer\VertexDeclarationOpenGL.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\renderer\VertexFVF.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\renderer\EffectManager.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\renderer\ParaVertexBufferPool.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\EventClasses.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\IEvent.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\DataProviderManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\DummyAnimInstance.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\SimpleTranslator.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ParaPlatformMacros.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\BipedWayPoint.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIIMEDelegate.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\TouchEventSession.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\XFileHelper.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\XFileParser.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\PERef.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\PERefPtr.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\ByteSwap.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\fast_atof.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\ParaXMaterial.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\ParaXRefObject.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\ParaXStaticModel.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ContentLoaders.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ContentLoaderCCSFace.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ContentLoaderCCSSkin.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ContentLoaderParaX.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ContentLoaderMesh.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ContentLoaderTexture.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\shaders\simple_mesh_normal_vegetation.h">
+      <Filter>shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\MeshHeader.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\ParaXStaticModelRenderPass.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\XFileCharModelParser.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\XFileStaticModelParser.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\XFileDataObject.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\DynamicVertexBufferEntityDirectX.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\DynamicVertexBufferEntityOpenGL.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\DynamicVertexBufferEntity.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\DynamicVertexBufferManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\EffectFileHandles.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaSimpleAudioEngine.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaSimpleAudioSource.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockReadWriteLock.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockFacing.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\ChunkMaxHeight.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockModelManager.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\ChunkVertexBuilderManager.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockIndex.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\protocol\pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIKeyboardVirtual.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CocosKeyMap.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\local_bridge_manual.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\EffectHelper.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\Fog.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\renderer\VirtualKeyDef.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockTessellators.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\WeatherParticleSpawner.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\WeatherEffect.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\Tick.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\FastRandom.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\unordered_array.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\BillBoardViewInfo.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ParticleElement.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\WeatherParticle.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\unordered_ref_array.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\ObjectEvent.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ParaEngineAppBase.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\ObjectAutoReleasePool.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\MoviePlatform.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\ContainerObject.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\BlockPieceParticle.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ObjectFactory.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\TerrainTileRoot.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\TileObject.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\AttributeModelProxy.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\BlockDynamicObject.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\CharacterDB.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIMouseVirtual.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\RenderTarget.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PaintEngine\PaintDevice.h">
+      <Filter>PaintEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PaintEngine\PaintEngine.h">
+      <Filter>PaintEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PaintEngine\PaintEngineGPU.h">
+      <Filter>PaintEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PaintEngine\PaintEngineRaster.h">
+      <Filter>PaintEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PaintEngine\Painter.h">
+      <Filter>PaintEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PaintEngine\ParaRegion.h">
+      <Filter>PaintEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PaintEngine\qmatrix.h">
+      <Filter>PaintEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PaintEngine\qtransform.h">
+      <Filter>PaintEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaNamespaces.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaLine.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaRect.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaMargins.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaPoint.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaSize.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\proj.android\jni\hellolua\Java_org_cocos2dx_lua_LocalBridge.h">
+      <Filter>proj.android\jni\hellolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PaintEngine\PaintEngineGPUState.h">
+      <Filter>PaintEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PaintEngine\PainterState.h">
+      <Filter>PaintEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\ios\LocalBridge_ios.h">
+      <Filter>platform\ios</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingPainter.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingFlashPlayer.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingBrowserManager.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingHTMLBrowser.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\math\ParaGlobals.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaScriptBindings\ParaScriptingGraphics.h">
+      <Filter>ParaScriptBindings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PaintEngine\qtextoption.h">
+      <Filter>PaintEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NPLActivationFile.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PaintEngine\qpolygon.h">
+      <Filter>PaintEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PaintEngine\qpainterpath.h">
+      <Filter>PaintEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PaintEngine\qpen.h">
+      <Filter>PaintEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PaintEngine\qbrush.h">
+      <Filter>PaintEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PaintEngine\qvectorpath.h">
+      <Filter>PaintEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PaintEngine\qfont.h">
+      <Filter>PaintEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AutoUpdate\AssetsManager.h">
+      <Filter>AutoUpdate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AutoUpdate\AssetsManagerGlobal.h">
+      <Filter>AutoUpdate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AutoUpdate\Downloader.h">
+      <Filter>AutoUpdate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AutoUpdate\FileUtils.h">
+      <Filter>AutoUpdate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\ios\LocalBridgeHandler_ios.h">
+      <Filter>platform\ios</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\platform\ios\LocalBridgePB.pb.h">
+      <Filter>platform\ios</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AutoUpdate\AssetsWorker.h">
+      <Filter>AutoUpdate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AutoUpdate\AutoUpdater.h">
+      <Filter>AutoUpdate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\GUIScrollBar.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\CustomCharCommon.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\CustomCharFace.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\CustomCharModelInstance.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\CustomCharSettings.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\ParaXModelCanvas.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\CustomCharRenderTarget.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ImageEntity.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\TextureComposer.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\MissileObject.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\TouchGesturePinch.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\TouchSessions.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\TouchGestureBase.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\FBXParser.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\2dengine\TextureParams.h">
+      <Filter>2dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BMaxModel\BMaxObject.h">
+      <Filter>3dengine\BMaxModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\INPLAcitvationFile.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tinyxml\tinyxml.h">
+      <Filter>Externals\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BMaxModel\BMaxParser.h">
+      <Filter>3dengine\BMaxModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\OverlayObject.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\BufferPicking.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\AttributeField.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\DynamicAttributeField.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\AttributeClass.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\DynamicAttributesSet.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\IAnimated.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\Variable.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BMaxModel\BMaxBlockModelNode.h">
+      <Filter>3dengine\BMaxModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BMaxModel\BMaxNode.h">
+      <Filter>3dengine\BMaxModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BMaxModel\BMaxFrameNode.h">
+      <Filter>3dengine\BMaxModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\BlockDirection.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\CarpetModelProvider.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\WireModelProvider.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\CameraFrustum.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\ParaXModelExporter.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\MultiFrameBlockWorldRenderer.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BMaxModel\BMaxAnimGenerator.h">
+      <Filter>3dengine\BMaxModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\FBXMaterial.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\FBXModelInfo.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ParaEngineCore.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\ParaEngineService.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\IO\ZipWriter.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BlockEngine\SlopeModelProvider.h">
+      <Filter>BlockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\ScopedLock.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NPL\NeuronFileState.h">
+      <Filter>NPL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\3dengine\LightObject.h">
+      <Filter>3dengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\lua_pack.h">
+      <Filter>util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\bitlib_lua.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\CyoDecode.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\CyoEncode.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\HttpUtility.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\intrusive_ptr.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\keyboard.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\Log.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\LogService.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\luafilesystem.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\MD5.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\os_calls.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\ParaMemPool.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\ParaTime.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\Report.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\StringBuilder.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\StringHelper.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ParaAxisAlignedBox.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ParaMath.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ParaMatrix3.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ParaMatrix4.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ParaPlane.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ParaQuaternion.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ParaVector2.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ParaVector3.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ParaVector4.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ic\ICConfigManager.cpp">
+      <Filter>Externals\ic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ic\ICDBManager.cpp">
+      <Filter>Externals\ic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ic\ICRecordSet.cpp">
+      <Filter>Externals\ic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ic\SQLStatement.cpp">
+      <Filter>Externals\ic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\curllua\curl_error.cpp">
+      <Filter>Externals\curllua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\curllua\Lua-cURL.c">
+      <Filter>Externals\curllua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\curllua\Lua-cURL-callback.c">
+      <Filter>Externals\curllua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\curllua\Lua-cURL-getinfo.c">
+      <Filter>Externals\curllua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\curllua\Lua-cURL-multi.c">
+      <Filter>Externals\curllua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\curllua\Lua-cURL-post.c">
+      <Filter>Externals\curllua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\curllua\Lua-cURL-setopt.c">
+      <Filter>Externals\curllua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\curllua\Lua-cURL-share.c">
+      <Filter>Externals\curllua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\curllua\Lua-utility.c">
+      <Filter>Externals\curllua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\jsoncpp\src\lib_json\json_reader.cpp">
+      <Filter>Externals\jsoncpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\jsoncpp\src\lib_json\json_value.cpp">
+      <Filter>Externals\jsoncpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\jsoncpp\src\lib_json\json_writer.cpp">
+      <Filter>Externals\jsoncpp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\AISimulator.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPL_imp.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLCodec.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLCommon.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLCompiler.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLConfig.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLConnection.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLConnectionManager.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLDispatcher.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLHelper.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLMemPool.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLMessage.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLMessageQueue.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLMsgIn_parser.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLMsgOut.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLNetClient.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLNetServer.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLParser.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLRuntime.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLRuntimeState.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLScriptingState.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLStateMemAllocator.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLTable.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLWriter.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\debugtools\paradebug.cpp">
+      <Filter>Externals\paradebug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\debugtools\Profiler.cpp">
+      <Filter>Externals\paradebug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MainLoopTimer.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\class.cpp">
+      <Filter>Externals\luabind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\class_info.cpp">
+      <Filter>Externals\luabind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\class_registry.cpp">
+      <Filter>Externals\luabind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\class_rep.cpp">
+      <Filter>Externals\luabind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\create_class.cpp">
+      <Filter>Externals\luabind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\error.cpp">
+      <Filter>Externals\luabind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\exception_handler.cpp">
+      <Filter>Externals\luabind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\function.cpp">
+      <Filter>Externals\luabind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\inheritance.cpp">
+      <Filter>Externals\luabind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\link_compatibility.cpp">
+      <Filter>Externals\luabind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\object_rep.cpp">
+      <Filter>Externals\luabind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\open.cpp">
+      <Filter>Externals\luabind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\pcall.cpp">
+      <Filter>Externals\luabind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\scope.cpp">
+      <Filter>Externals\luabind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\stack_content_by_name.cpp">
+      <Filter>Externals\luabind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\weak_ref.cpp">
+      <Filter>Externals\luabind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\luabind\src\wrapper_base.cpp">
+      <Filter>Externals\luabind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScripting.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScripting2.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScripting3.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScripting4.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScripting5.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingCommon.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingGlobal.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingIC.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingIO.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingIPC.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingMisc.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingNetwork.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingNPL.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingTest.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IO\Archive.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IO\AssetManifest.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IO\AsyncLoader.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IO\FileData.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IO\FileHandle.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IO\FileLogger.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IO\FileManager.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IO\FilePath.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IO\FileSearchResult.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IO\FileSystemWatcher.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IO\FileUtils.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IO\MemReadFile.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IO\ParaFile.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IO\ZipArchive.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IO\ReadFile.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\CommonFileDialog.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\dl_malloc.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\MidiMsg.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ParaColor.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ParaMathMatrix.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ParaMathMisc.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ParaMathVector.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\AABBCollider.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ShapeAABB.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ShapeCone.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ShapeFrustum.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ShapeOBB.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ShapeRay.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ShapeSphere.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\Collider.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\AssetEntity.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\BootStrapper.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\CommandLineParams.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\Globals.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\IAttributeFields.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\PluginAPI.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\PluginManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\TextureEntity.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\TextureEntityDirectX.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\TextureEntityOpenGL.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\UrlLoaders.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\EventHandler.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\EventsCenter.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\FrameRateController.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\Platforms.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\ParaWorldAsset.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\SpriteFontEntityOpenGL.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\SpriteFontEntityDirectX.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\SpriteFontEntity.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\ParameterBlock.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\ParaEngineInfo.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\luaSQLite.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\IPCManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\AttributesManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\DatabaseEntity.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\MiscEntity.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\IObjectDrag.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\ObjectManager.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\Type.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\EventBinding.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIAttributeGrid.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIBase.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIButton.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIContainer.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIDirectInput.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIEdit.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIEvent.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIHighlight.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIIME.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIIMEEditBox.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIListBox.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIPosition.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIResource.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIRoot.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIScript.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUISlider.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIText.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIToolTip.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIUniBuffer.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIWebBrowser.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\IObjectScriptingInterface.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingAudio.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingBlockWorld.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingCharacter.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingGUI.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingMovie.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingScene.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingTerrain.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingWorld.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Engine\ParaEngineApp.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CGUIRootLayer.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\FontRendererOpenGL.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\ConvertUTF.c">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\ConvertUTFWrapper.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\AnimTable.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\BoneAnimProvider.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\BoneChain.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\ColladaModelLoader.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\ModelRenderPass.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\ParaXBone.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\ParaXModel.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\ParaXModelCommon.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\particle.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\ParticleSystemRef.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\TextureAnim.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\BaseObject.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\IRefObject.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\IViewClippingObject.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\SceneObject.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\SceneObjectPicking.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\SceneWriter.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\SortedFaceGroups.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\ViewCullingObject.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\SunLight.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\light_scattering_data.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\SceneState.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\Viewport.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\ViewportManager.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\ZoneNode.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\PortalNode.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\Brush.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\DetailTexture.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\DetailTextureFactory.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\DynamicTerrainLoader.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\GlobalTerrain.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\Loader.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\Settings.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\Terrain.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\TerrainBlock.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\TerrainCommon.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\TerrainFilters.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\TerrainGeoMipmapIndices.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\TerrainLattice.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\TerrainRegions.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\TerrainVertex.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\Texture.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\TextureCell.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\TextureFactory.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\TextureGenerator.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\TextureSet.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\Triangle.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\TriangleFan.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\TriangleStrip.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\TTerrain.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\WorldNameFactory.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\WorldInfo.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\MeshEntity.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\PhysicsWorld.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\XRefObject.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\MeshObject.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\MeshPhysicsObject.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\ParaEngineSettings.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\ParaMeshXMLFile.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\ParaXEntity.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\ParaXSerializer.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\SelectionManager.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\PredefinedEvents.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\BatchedElementDraw.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\EnvironmentSim.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\BipedController.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\BipedObject.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\BipedStateManager.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\IGameObject.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\IHeadOn3D.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\KeyFrame.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\AIBase.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\AIModuleNPC.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\AITasks.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\FaceTrackingCtrler.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\MovieCtrlers.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\SequenceCtler.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\SequenceEntity.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\SequenceManager.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockChunk.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockCommon.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockConfig.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockCoordinate.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockDataCodec.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockLightGridBase.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockLightGridClient.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockLightGridServer.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockModel.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockModelProvider.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockRegion.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockRenderTask.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockTemplate.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockWorld.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockWorldClient.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockWorldManager.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\RenderableChunk.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\OceanManager.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\MiniSceneGraph.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\CanvasCamera.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\ManagedLoader.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\LightManager.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\AttributeProvider.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\AutoCamera.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\BaseCamera.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\LightParam.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\ParaXAnimInstance.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\PortalFrustum.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\RayCollider.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\ShadowVolume.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\SkyMesh.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\TerrainTile.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\terrain\TerrainBuffer.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\SphereObject.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\AudioEngine2.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\ParaPhysics.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\renderer\effect_file_DirectX.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\renderer\effect_file_OpenGL.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\renderer\ParaVertexBuffer.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\renderer\RenderDevice.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\renderer\RenderDeviceDirectX.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\renderer\RenderDeviceOpenGL.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\renderer\SpriteRenderer.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\renderer\SpriteRendererDirectX.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\renderer\SpriteRendererOpenGL.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\renderer\VertexDeclarationOpenGL.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\renderer\VertexFVF.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\renderer\EffectManager.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\renderer\ParaVertexBufferPool.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\EventClasses.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\DataProviderManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\DummyAnimInstance.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\AnimInstanceBase.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\BipedWayPoint.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIIMEDelegate.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\TouchEventSession.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\XFileHelper.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\XFileParser.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\PERef.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\ContentLoaderCCSFace.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\ContentLoaderCCSSkin.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\ContentLoaderParaX.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\ContentLoaderMesh.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\ContentLoaderTexture.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\ParaXStaticModel.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\ParaXStaticModelRenderPass.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\XFileCharModelParser.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\XFileStaticModelParser.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\XFileDataObject.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\DynamicVertexBufferEntityDirectX.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\DynamicVertexBufferEntityOpenGL.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\DynamicVertexBufferManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaSimpleAudioEngine.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaSimpleAudioSource.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockReadWriteLock.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockFacing.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\ChunkMaxHeight.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockModelManager.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\ChunkVertexBuilderManager.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\protocol\pb.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIKeyboardVirtual.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocosKeyMap.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\local_bridge_manual.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\EffectHelper.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\Fog.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockTessellators.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\WeatherEffect.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\WeatherParticleSpawner.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\Tick.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\FastRandom.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\BillBoardViewInfo.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\WeatherParticle.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\ObjectEvent.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\ParaEngineAppBase.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\ObjectAutoReleasePool.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\ParaEngine.cxx">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\MoviePlatform.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\ContainerObject.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\BlockPieceParticle.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\TerrainTileRoot.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\TileObject.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\BlockDynamicObject.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\CharacterDB.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIMouseVirtual.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\RenderTarget.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PaintEngine\PaintDevice.cpp">
+      <Filter>PaintEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PaintEngine\PaintEngine.cpp">
+      <Filter>PaintEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PaintEngine\PaintEngineGPU.cpp">
+      <Filter>PaintEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PaintEngine\PaintEngineRaster.cpp">
+      <Filter>PaintEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PaintEngine\Painter.cpp">
+      <Filter>PaintEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PaintEngine\ParaRegion.cpp">
+      <Filter>PaintEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PaintEngine\qmatrix.cpp">
+      <Filter>PaintEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PaintEngine\qtransform.cpp">
+      <Filter>PaintEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ParaLine.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ParaRect.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ParaMargins.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ParaPoint.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\math\ParaSize.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proj.android\jni\hellolua\Java_org_cocos2dx_lua_LocalBridge.cpp">
+      <Filter>proj.android\jni\hellolua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\proj.android\jni\hellolua\main.cpp">
+      <Filter>proj.android\jni\hellolua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PaintEngine\PaintEngineGPUState.cpp">
+      <Filter>PaintEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PaintEngine\PainterState.cpp">
+      <Filter>PaintEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingPainter.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingFlashPlayer.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingBrowserManager.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingHTMLBrowser.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaScriptBindings\ParaScriptingGraphics.cpp">
+      <Filter>ParaScriptBindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NPLActivationFile.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PaintEngine\qpolygon.cpp">
+      <Filter>PaintEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PaintEngine\qpainterpath.cpp">
+      <Filter>PaintEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PaintEngine\qpen.cpp">
+      <Filter>PaintEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PaintEngine\qbrush.cpp">
+      <Filter>PaintEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PaintEngine\qvectorpath.cpp">
+      <Filter>PaintEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PaintEngine\qfont.cpp">
+      <Filter>PaintEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AutoUpdate\AssetsManager.cpp">
+      <Filter>AutoUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AutoUpdate\AssetsManagerGlobal.cpp">
+      <Filter>AutoUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AutoUpdate\Downloader.cpp">
+      <Filter>AutoUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AutoUpdate\PeFileUtils.cpp">
+      <Filter>AutoUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\platform\ios\LocalBridge_ios.cpp">
+      <Filter>platform\ios</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\platform\ios\LocalBridgePB.pb.cc">
+      <Filter>platform\ios</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AutoUpdate\AssetsWorker.cpp">
+      <Filter>AutoUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AutoUpdate\AutoUpdater.cpp">
+      <Filter>AutoUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIScrollBar.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\CustomCharCommon.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\CustomCharFace.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\CustomCharModelInstance.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\CustomCharSettings.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\ParaXModelCanvas.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\CustomCharRenderTarget.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\ImageEntity.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\TextureComposer.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\MissileObject.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\TouchGesturePinch.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\TouchSessions.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\FBXParser.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\TextureParams.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BMaxModel\BMaxObject.cpp">
+      <Filter>3dengine\BMaxModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tinyxml\tinyxml.cpp">
+      <Filter>Externals\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tinyxml\tinyxmlerror.cpp">
+      <Filter>Externals\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tinyxml\tinyxmlparser.cpp">
+      <Filter>Externals\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\NetworkAdapter.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BMaxModel\BMaxParser.cpp">
+      <Filter>3dengine\BMaxModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\OverlayObject.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\BufferPicking.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\DynamicAttributeField.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\AttributeField.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\AttributeClass.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\DynamicAttributesSet.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\IAnimated.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\Variable.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BMaxModel\BMaxBlockModelNode.cpp">
+      <Filter>3dengine\BMaxModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BMaxModel\BMaxNode.cpp">
+      <Filter>3dengine\BMaxModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BMaxModel\BMaxFrameNode.cpp">
+      <Filter>3dengine\BMaxModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\BlockDirection.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\CarpetModelProvider.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\WireModelProvider.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\CameraFrustum.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\ParaXModelExporter.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\MultiFrameBlockWorldRenderer.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BMaxModel\BMaxAnimGenerator.cpp">
+      <Filter>3dengine\BMaxModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\2dengine\GUIState.cpp">
+      <Filter>2dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\FBXModelInfo.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\ParaEngineCore.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\ParaEngineService.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\IO\ZipWriter.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BlockEngine\SlopeModelProvider.cpp">
+      <Filter>BlockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NPL\NeuronFileState.cpp">
+      <Filter>NPL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\3dengine\LightObject.cpp">
+      <Filter>3dengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util\lua_pack.c">
+      <Filter>util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>Externals\resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Classes\jsoncpp\src\lib_json\json_internalarray.inl">
+      <Filter>Externals\jsoncpp\src</Filter>
+    </None>
+    <None Include="..\Classes\jsoncpp\src\lib_json\json_internalmap.inl">
+      <Filter>Externals\jsoncpp\src</Filter>
+    </None>
+    <None Include="..\Classes\jsoncpp\src\lib_json\json_valueiterator.inl">
+      <Filter>Externals\jsoncpp\src</Filter>
+    </None>
+    <None Include="..\Classes\math\ParaVector3.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="..\Classes\math\ParaVector4.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="..\Classes\math\ParaAngle.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="..\Classes\shaders\blockEffect.shader">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\Classes\shaders\singleColorEffect.shader">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\Classes\shaders\blockSelectEffect.shader">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\Classes\shaders\meshNormalEffect.shader">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\Classes\ParaXModel\ParaXmodel.templates">
+      <Filter>3dengine\ParaXModel</Filter>
+    </None>
+    <None Include="..\Classes\ParaXModel\XFileParsing.inl">
+      <Filter>3dengine\ParaXModel</Filter>
+    </None>
+    <None Include="..\Classes\shaders\particleEffect.shader">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\Classes\shaders\guiEffect.shader">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\Classes\shaders\guiTextEffect.shader">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\proj.android\src\org\cocos2dx\lua\AppActivity.java">
+      <Filter>proj.android\src\org\cocos2dx\lua</Filter>
+    </None>
+    <None Include="..\Classes\shaders\skydomeEffect.shader">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\Classes\shaders\skymeshEffect.shader">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\proj.ios_mac\buildboost_ios.sh">
+      <Filter>proj.ios_mac</Filter>
+    </None>
+    <None Include="..\proj.android\jni\Android.mk">
+      <Filter>proj.android\jni</Filter>
+    </None>
+    <None Include="..\proj.android\jni\Application.mk">
+      <Filter>proj.android\jni</Filter>
+    </None>
+    <None Include="..\proj.android\jni\ParaEngineCore.mk">
+      <Filter>proj.android\jni</Filter>
+    </None>
+    <None Include="..\proj.android\jni\ParaEngineGraphics.mk">
+      <Filter>proj.android\jni</Filter>
+    </None>
+    <None Include="..\Classes\shaders\terrainEffect.shader">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\proj.shell\AppBuilder.py">
+      <Filter>proj.shell</Filter>
+    </None>
+    <None Include="..\proj.shell\NPLCompiler.py">
+      <Filter>proj.shell</Filter>
+    </None>
+    <None Include="..\proj.shell\PerpetualTimer.py">
+      <Filter>proj.shell</Filter>
+    </None>
+    <None Include="..\proj.shell\build.py">
+      <Filter>proj.shell</Filter>
+    </None>
+    <None Include="..\Classes\platform\ios\LocalBridgeHandler.mm">
+      <Filter>platform\ios</Filter>
+    </None>
+    <None Include="..\Classes\shaders\blockMaxEffect.shader">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Classes\NPL\NPL_readme.txt">
+      <Filter>NPL</Filter>
+    </Text>
+    <Text Include="..\Classes\readme.txt" />
+    <Text Include="..\Classes\changes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Classes\NPL\sample.config.xml">
+      <Filter>NPL</Filter>
+    </Xml>
+    <Xml Include="..\proj.android\AndroidManifest.xml">
+      <Filter>proj.android</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\game.ico">
+      <Filter>Externals\resource</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

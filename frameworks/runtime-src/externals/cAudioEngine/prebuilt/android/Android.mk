@@ -1,0 +1,36 @@
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+LOCAL_MODULE:= libcAudio
+LOCAL_MODULE_FILENAME := libcAudio
+LOCAL_SRC_FILES:= $(TARGET_ARCH_ABI)/libcAudio.a
+include $(PREBUILT_STATIC_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE:= libcAp_mp3Decoder
+LOCAL_MODULE_FILENAME := libcAp_mp3Decoder
+LOCAL_SRC_FILES:= $(TARGET_ARCH_ABI)/libcAp_mp3Decoder.a
+include $(PREBUILT_STATIC_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE:= libOgg
+LOCAL_MODULE_FILENAME := libOgg
+LOCAL_SRC_FILES:= $(TARGET_ARCH_ABI)/libOgg.a
+include $(PREBUILT_STATIC_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE:= libVorbis
+LOCAL_MODULE_FILENAME := libVorbis
+LOCAL_SRC_FILES:= $(TARGET_ARCH_ABI)/libVorbis.a
+include $(PREBUILT_STATIC_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE:= libcommon
+LOCAL_MODULE_FILENAME := libcommon
+LOCAL_SRC_FILES:= $(TARGET_ARCH_ABI)/libcommon.a
+include $(PREBUILT_STATIC_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE:= libopenal
+LOCAL_MODULE_FILENAME := libopenal
+LOCAL_SRC_FILES:= $(TARGET_ARCH_ABI)/libopenal.a
+include $(PREBUILT_STATIC_LIBRARY)

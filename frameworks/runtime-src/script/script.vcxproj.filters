@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\..\src\script\main.lua" />
+    <None Include="..\..\..\src\script\mobile\test\testPlatforms.lua">
+      <Filter>mobile\test</Filter>
+    </None>
+    <None Include="..\..\..\src\script\mobile\test\testNPL.lua">
+      <Filter>mobile\test</Filter>
+    </None>
+    <None Include="..\..\..\src\script\mobile\test\testGUI.lua">
+      <Filter>mobile\test</Filter>
+    </None>
+    <None Include="..\..\..\src\script\mobile\test\testScene.lua">
+      <Filter>mobile\test</Filter>
+    </None>
+    <None Include="..\..\..\src\script\config.lua" />
+    <None Include="..\..\..\src\script\mobile\samples\HelloWorldMCML\HelloWorld.html">
+      <Filter>mobile\samples\HelloWorldMCML</Filter>
+    </None>
+    <None Include="..\..\..\src\script\mobile\samples\HelloWorldMCML\HelloWorld.lua">
+      <Filter>mobile\samples\HelloWorldMCML</Filter>
+    </None>
+    <None Include="..\..\..\src\script\mobile\samples\HelloWorldMCML\main.lua">
+      <Filter>mobile\samples\HelloWorldMCML</Filter>
+    </None>
+    <None Include="..\..\..\src\script\mobile\protobuf\containers.lua">
+      <Filter>mobile\protobuf</Filter>
+    </None>
+    <None Include="..\..\..\src\script\mobile\protobuf\decoder.lua">
+      <Filter>mobile\protobuf</Filter>
+    </None>
+    <None Include="..\..\..\src\script\mobile\protobuf\descriptor.lua">
+      <Filter>mobile\protobuf</Filter>
+    </None>
+    <None Include="..\..\..\src\script\mobile\protobuf\encoder.lua">
+      <Filter>mobile\protobuf</Filter>
+    </None>
+    <None Include="..\..\..\src\script\mobile\protobuf\listener.lua">
+      <Filter>mobile\protobuf</Filter>
+    </None>
+    <None Include="..\..\..\src\script\mobile\protobuf\protobuf.lua">
+      <Filter>mobile\protobuf</Filter>
+    </None>
+    <None Include="..\..\..\src\script\mobile\protobuf\text_format.lua">
+      <Filter>mobile\protobuf</Filter>
+    </None>
+    <None Include="..\..\..\src\script\mobile\protobuf\type_checkers.lua">
+      <Filter>mobile\protobuf</Filter>
+    </None>
+    <None Include="..\..\..\src\script\mobile\protobuf\wire_format.lua">
+      <Filter>mobile\protobuf</Filter>
+    </None>
+    <None Include="..\..\..\src\script\mobile\API\local_service_constants.lua">
+      <Filter>mobile\API</Filter>
+    </None>
+    <None Include="..\..\..\src\script\mobile\API\local_service_wrapper.lua">
+      <Filter>mobile\API</Filter>
+    </None>
+    <None Include="..\..\..\src\script\mobile\NetWork\LocalBridgePB.proto">
+      <Filter>mobile\NetWork</Filter>
+    </None>
+    <None Include="..\..\..\src\script\mobile\NetWork\LocalBridgePB_pb.lua">
+      <Filter>mobile\NetWork</Filter>
+    </None>
+    <None Include="..\..\..\src\script\mobile\API\LocalBridgePBAPI.lua">
+      <Filter>mobile\API</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="mobile">
+      <UniqueIdentifier>{c5f7e1bb-f25f-4a5c-b009-cb9fc27535f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mobile\test">
+      <UniqueIdentifier>{f966c4d3-9b86-41fa-9ff1-86dbacf9c913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{e3f2ca50-290b-46d2-8fd0-12b182341ea3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Loading">
+      <UniqueIdentifier>{2f074658-61ad-4d23-9e76-ce1b405179b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Login">
+      <UniqueIdentifier>{ec0c0c2b-9210-4add-aadb-8995425ea443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIFrameWork">
+      <UniqueIdentifier>{fa63e3c0-4f3b-4045-80af-5d837b4ab411}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mobile\samples">
+      <UniqueIdentifier>{d88ce4c2-8177-435f-ae5e-9bbc5abcf12e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mobile\samples\HelloWorldMCML">
+      <UniqueIdentifier>{7db41518-d14e-4ff8-aedd-7731909704a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mobile\paracraft">
+      <UniqueIdentifier>{57589886-7206-4ffa-9f77-b79c5af49874}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mobile\API">
+      <UniqueIdentifier>{99aa1cf3-dbf4-4f42-a870-fc89e64dcf71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mobile\NetWork">
+      <UniqueIdentifier>{3c3f9879-2ad3-492d-824f-72c93ce754ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mobile\protobuf">
+      <UniqueIdentifier>{07a77b68-b470-4347-a9e1-53aca98da2bf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <NPL Include="..\..\..\src\script\mobile\cocos.lua">
+      <Filter>mobile</Filter>
+    </NPL>
+  </ItemGroup>
+</Project>
