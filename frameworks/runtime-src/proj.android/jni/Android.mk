@@ -39,7 +39,7 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes \
 					$(LOCAL_PATH)/../../Classes/luabind \
 					$(LOCAL_PATH)/../../../cocos2d-x/external/tinyxml2 \
 					$(LOCAL_PATH)/../../../cocos2d-x/external/curl/include/android/ \
-					$(LOCAL_PATH)/../../external/boost/boost_1_61_0/boost \
+					$(LOCAL_PATH)/../../external/boost/boost_1_55_0/boost \
 					$(LOCAL_PATH)/../../proj.android \
 					$(LOCAL_PATH)/../../../cocos2d-x/cocos/scripting/lua-bindings/manual/platform/android \
 					$(LOCAL_PATH)/../../../cocos2d-x/cocos/scripting/lua-bindings/manual \
