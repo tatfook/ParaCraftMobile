@@ -40,7 +40,7 @@ CFontRendererOpenGL* ParaEngine::CFontRendererOpenGL::create(const std::string& 
 		//fontFile = "fonts/simhei.ttf"; // 9MB
 		//fontFile = "fonts/FZYTK.TTF"; // 3MB
 		//fontFile = "fonts/SIMYOU.TTF"; // 6MB
-		fontFile = "fonts/DroidSansFallback.ttf"; // 3.6MB
+		fontFile = "fonts/ParaEngineThaiFont.ttf"; // 3.6MB
 	}
 	else
 	{
