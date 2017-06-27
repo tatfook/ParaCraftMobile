@@ -74,6 +74,7 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes \
 					$(LOCAL_PATH)/../../Classes/Core \
 					$(LOCAL_PATH)/../../Classes/IO \
 					$(LOCAL_PATH)/../../Classes/util \
+					$(LOCAL_PATH)/../../Classes/WebSocket \
 					$(LOCAL_PATH)/../../Classes/NPL \
 					$(LOCAL_PATH)/../../Classes/ParaScriptBindings \
 					$(LOCAL_PATH)/../../Classes/Engine \

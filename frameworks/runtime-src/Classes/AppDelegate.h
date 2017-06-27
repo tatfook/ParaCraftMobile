@@ -19,7 +19,7 @@ namespace ParaEngine
 	class  AppDelegate : private cocos2d::Application
 	{
 	public:
-		AppDelegate();
+		AppDelegate(std::string worldUrl);
 		virtual ~AppDelegate();
 
 		void StopApp();
@@ -69,6 +69,7 @@ namespace ParaEngine
 		std::unique_ptr<MainLoopTimer> m_pMainTimer;
 		std::unique_ptr<CParaEngineApp> m_pParaEngineApp;
         std::string m_MacCommandline;
+		std::string m_worldUrl;
 	};
 }
 using namespace ParaEngine;

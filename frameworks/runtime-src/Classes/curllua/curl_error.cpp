@@ -6,7 +6,6 @@
 // Date:	2008.11.25
 // Desc: this file is added to replace the luaL_error with a version that output to ParaEngine log and does not throw exceptions. 
 //-----------------------------------------------------------------------------
-
 #include "ParaEngine.h"
 
 #include "curl_error.h"

@@ -29,7 +29,7 @@
 #define luaL_checktable(L, n) luaL_checktype(L, n, LUA_TTABLE)
 /* return NULL if key doesnt exist */
 const char* luaL_getstrfield(lua_State* L, const char* key);
-const char* luaL_getlstrfield(lua_State* L, const char* key, int *len);
+const char* luaL_getlstrfield(lua_State* L, const char* key, size_t *len);
 
 #define stackDump(L) _stackDump(L, __FILE__, __LINE__)
 void _stackDump (lua_State *L, const char* file, int line);

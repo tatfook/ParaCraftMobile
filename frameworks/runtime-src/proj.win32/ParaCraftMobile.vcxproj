@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -22,7 +22,7 @@
     <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
     <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
     <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -31,7 +31,7 @@
     <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
     <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
     <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -89,7 +89,7 @@
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\externals\assimp\prebuilt\win32dll;$(ProjectDir)..\external\boost\boost_1_55_0\win32;$(ProjectDir)..\..\cocos2d-x\external\sqlite3\libraries\win32;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\ParaCraftMobile\frameworks\runtime-src\externals\lua;$(ProjectDir)..\externals\assimp\prebuilt\win32dll;$(ProjectDir)..\external\boost\boost_1_55_0\win32;$(ProjectDir)..\..\cocos2d-x\external\sqlite3\libraries\win32;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>assimp.lib;libboost_date_time-vc120-mt-gd-1_55.lib;libcurl_imp.lib;lua51.lib;websockets.lib;GlU32.Lib;sqlite3.lib;libcocos2d.lib;libluacocos2d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ResourceCompile>
@@ -406,6 +406,7 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ClInclude Include="..\Classes\Core\MiscEntity.h" />
     <ClInclude Include="..\Classes\Core\NPLInterface.hpp" />
     <ClInclude Include="..\Classes\Core\NPLMiniRuntime.hpp" />
+    <ClInclude Include="..\Classes\Core\NPLPackageConfig.h" />
     <ClInclude Include="..\Classes\Core\NPLTypes.h" />
     <ClInclude Include="..\Classes\Core\ObjectFactory.h" />
     <ClInclude Include="..\Classes\Core\ObjScriptPool.h" />
@@ -609,8 +610,10 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ClInclude Include="..\Classes\ParaXModel\particle.h" />
     <ClInclude Include="..\Classes\ParaXModel\ParticleSystemRef.h" />
     <ClInclude Include="..\Classes\ParaXModel\TextureAnim.h" />
+    <ClInclude Include="..\Classes\ParaXModel\XFileCharModelExporter.h" />
     <ClInclude Include="..\Classes\ParaXModel\XFileCharModelParser.h" />
     <ClInclude Include="..\Classes\ParaXModel\XFileDataObject.h" />
+    <ClInclude Include="..\Classes\ParaXModel\XFileExporter.h" />
     <ClInclude Include="..\Classes\ParaXModel\XFileHelper.h" />
     <ClInclude Include="..\Classes\ParaXModel\XFileParser.h" />
     <ClInclude Include="..\Classes\ParaXModel\XFileStaticModelParser.h" />
@@ -726,6 +729,11 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ClInclude Include="..\Classes\util\tinyjson.hpp" />
     <ClInclude Include="..\Classes\util\Type.h" />
     <ClInclude Include="..\Classes\util\unordered_array.hpp" />
+    <ClInclude Include="..\Classes\WebSocket\ByteBuffer.h" />
+    <ClInclude Include="..\Classes\WebSocket\WebSocketCommon.h" />
+    <ClInclude Include="..\Classes\WebSocket\WebSocketFrame.h" />
+    <ClInclude Include="..\Classes\WebSocket\WebSocketReader.h" />
+    <ClInclude Include="..\Classes\WebSocket\WebSocketWriter.h" />
     <ClInclude Include="..\proj.android\jni\hellolua\Java_org_cocos2dx_lua_LocalBridge.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
@@ -928,6 +936,7 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ClCompile Include="..\Classes\Core\IPCManager.cpp" />
     <ClCompile Include="..\Classes\Core\luaSQLite.cpp" />
     <ClCompile Include="..\Classes\Core\MiscEntity.cpp" />
+    <ClCompile Include="..\Classes\Core\NPLPackageConfig.cpp" />
     <ClCompile Include="..\Classes\Core\ParaEngine.cxx">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -1206,8 +1215,10 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ClCompile Include="..\Classes\ParaXModel\particle.cpp" />
     <ClCompile Include="..\Classes\ParaXModel\ParticleSystemRef.cpp" />
     <ClCompile Include="..\Classes\ParaXModel\TextureAnim.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\XFileCharModelExporter.cpp" />
     <ClCompile Include="..\Classes\ParaXModel\XFileCharModelParser.cpp" />
     <ClCompile Include="..\Classes\ParaXModel\XFileDataObject.cpp" />
+    <ClCompile Include="..\Classes\ParaXModel\XFileExporter.cpp" />
     <ClCompile Include="..\Classes\ParaXModel\XFileHelper.cpp" />
     <ClCompile Include="..\Classes\ParaXModel\XFileParser.cpp" />
     <ClCompile Include="..\Classes\ParaXModel\XFileStaticModelParser.cpp" />
@@ -1305,6 +1316,10 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ClCompile Include="..\Classes\util\StringHelper.cpp" />
     <ClCompile Include="..\Classes\util\Tick.cpp" />
     <ClCompile Include="..\Classes\util\Type.cpp" />
+    <ClCompile Include="..\Classes\WebSocket\ByteBuffer.cpp" />
+    <ClCompile Include="..\Classes\WebSocket\WebSocketFrame.cpp" />
+    <ClCompile Include="..\Classes\WebSocket\WebSocketReader.cpp" />
+    <ClCompile Include="..\Classes\WebSocket\WebSocketWriter.cpp" />
     <ClCompile Include="..\proj.android\jni\hellolua\Java_org_cocos2dx_lua_LocalBridge.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>

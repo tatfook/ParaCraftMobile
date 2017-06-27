@@ -3,9 +3,9 @@
 * Author: Liu Weili, Li Xizhi,
 * Date: 2005.11.15
 * Description:
-* This is the global debug tool for all paraengine files. It provides debug and release warning, error or log outputs. 
+* This is the global debug tool for all paraengine files. It provides debug and release warning, error or log outputs.
 * It also provides performance counters for developers to test the performance of their code. It may also
-* provide some auto or semi-auto debug procedures. All these tools are in the debugtools directory. 
+* provide some auto or semi-auto debug procedures. All these tools are in the debugtools directory.
 * Programmers who wants to use these tools only need to include paradebug.h
 */
 #pragma once
@@ -19,9 +19,9 @@
 #define OUTPUT_INTEGER_ERROR(a) InterpretError((a),__FILE__,__LINE__);
 
 /**
-* Output to log file the interpreted error 
+* Output to log file the interpreted error
 */
-extern void InterpretError(HRESULT hr,const char * sFile, int nLine);
+extern void InterpretError(HRESULT hr, const char * sFile, int nLine);
 
 /** call this function to save mini-dump to the current directory.*/
 extern int GenerateDump(EXCEPTION_POINTERS* pExceptionPointers);

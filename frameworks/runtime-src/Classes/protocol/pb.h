@@ -2,10 +2,12 @@
 #define PB_H
 #include <stdint.h>
 #include <string.h>
-#include "tolua++.h"
+extern "C"
+{
 #include "lua.h"
 #include "lualib.h"
 #include "lauxlib.h"
+}
 
 #ifdef _ALLBSD_SOURCE
 //#include <machine/endian.h>
@@ -29,6 +31,6 @@ typedef struct{
     char buf[IOSTRING_BUF_LEN];
 } IOString;
 
-TOLUA_API int luaopen_pb(lua_State *L);
+int luaopen_pb(lua_State *L);
 #endif
 

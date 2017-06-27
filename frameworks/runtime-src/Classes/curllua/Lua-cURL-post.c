@@ -74,7 +74,7 @@ int l_easy_post(lua_State *L) {
     if (lua_istable(L, -1)) {
       const char* type, *file, *data;
       CURLFORMcode rc = CURLE_OK;
-      int datalen;
+	  size_t datalen;
 
       /* check for type option */
       type = luaL_getstrfield(L, "type");

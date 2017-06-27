@@ -1,5 +1,14 @@
+//-----------------------------------------------------------------------------
+// Class: google protocol buffer lib
+// Authors:	
+// Emails:
+// Date: 2015.8.20
+// Desc: 
+//-----------------------------------------------------------------------------
 #include "ParaEngine.h"
+#include "NPL/NPLRuntime.h"
 #include "pb.h"
+using namespace ParaEngine;
 
 static void pack_varint(luaL_Buffer *b, uint64_t value)
 {
@@ -237,7 +246,7 @@ static int zig_zag_encode64(lua_State *L)
 {
     int64_t n = (int64_t)luaL_checknumber(L, 1);
     uint64_t value = (n << 1) ^ (n >> 63);
-    lua_pushinteger(L, value);
+    lua_pushinteger(L, (lua_Integer)value);
     return 1;
 }
 
@@ -245,7 +254,7 @@ static int zig_zag_decode64(lua_State *L)
 {
     uint64_t n = (uint64_t)luaL_checknumber(L, 1);
     int64_t value = (n >> 1) ^ - (int64_t)(n & 1);
-    lua_pushinteger(L, value);
+	lua_pushinteger(L, (lua_Integer)value);
     return 1;
 }
 
@@ -425,3 +434,18 @@ int luaopen_pb (lua_State *L)
     luaL_register(L, "pb", _pb);
     return 1;
 } 
+
+extern "C"
+{
+	/** to load the lib, please call:  
+		NPL.call("protocol/pb.cpp", {});
+		NPL.activate("protocol/pb.cpp"); 
+	*/
+	PE_CORE_DECL NPL::NPLReturnCode NPL_activate_protocol_pb_cpp(NPL::INPLRuntimeState* pState)
+	{
+		auto pRuntimeState = CGlobals::GetNPLRuntime()->GetRuntimeState(pState->GetName());
+		luaopen_pb(pRuntimeState->GetLuaState());
+		OUTPUT_LOG("protocol buffer lib loaded\n");
+		return NPL::NPL_OK;
+	};
+}

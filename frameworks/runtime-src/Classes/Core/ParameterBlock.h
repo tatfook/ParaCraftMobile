@@ -117,7 +117,7 @@ namespace ParaEngine
 
 		/** if there is already a parameter with the same name, it will be overridden. */
 		template <class t>
-		void SetParameter(string sName, const t& value)
+		void SetParameter(const string& sName, const t& value)
 		{
 			map <string, CParameter>::iterator it = m_params.find(sName);
 			if(it!=m_params.end())
@@ -136,7 +136,7 @@ namespace ParaEngine
 		bool AddParameter(const CParameter& p);
 
 		/** get parameter by its name, NULL will be returned if parameter is not found. */
-		CParameter* GetParameter(string sName)
+		CParameter* GetParameter(const string& sName)
 		{
 			map <string, CParameter>::iterator it = m_params.find(sName);
 			if(it!=m_params.end())
@@ -163,5 +163,20 @@ namespace ParaEngine
 
 		/** apply to effect file. */
 		bool ApplyToEffect( CEffectFile* pEffectFile );
+	};
+
+	/** apply object-level params and restore to default value. */
+	class CApplyObjectLevelParamBlock
+	{
+	private:
+		CApplyObjectLevelParamBlock(){};
+	public:
+		CApplyObjectLevelParamBlock(CParameterBlock* pBlock);
+		~CApplyObjectLevelParamBlock();
+
+		CParameterBlock* GetParamsBlock();
+	private:
+		CParameterBlock* m_pBlock;
+		bool m_bLastZEnabled;
 	};
 }

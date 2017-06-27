@@ -8,6 +8,18 @@
     <None Include="..\..\..\src\script\mobile\test\testNPL.lua">
       <Filter>mobile\test</Filter>
     </None>
+    <None Include="..\..\..\src\script\UI\Loading\LoadingPage.lua">
+      <Filter>UI\Loading</Filter>
+    </None>
+    <None Include="..\..\..\src\script\UI\Login\LoginPage.lua">
+      <Filter>UI\Login</Filter>
+    </None>
+    <None Include="..\..\..\src\script\UIFrameWork\BasePage.lua">
+      <Filter>UIFrameWork</Filter>
+    </None>
+    <None Include="..\..\..\src\script\UIFrameWork\PageManager.lua">
+      <Filter>UIFrameWork</Filter>
+    </None>
     <None Include="..\..\..\src\script\mobile\test\testGUI.lua">
       <Filter>mobile\test</Filter>
     </None>

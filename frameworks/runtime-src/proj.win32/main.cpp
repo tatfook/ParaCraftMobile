@@ -23,7 +23,7 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 #endif
 
     // create the application instance
-    AppDelegate app;
+    AppDelegate *app = new AppDelegate("");
     int ret = Application::getInstance()->run();
 
 #ifdef USE_WIN32_CONSOLE

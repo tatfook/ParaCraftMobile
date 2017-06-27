@@ -26,7 +26,7 @@
 #include "Lua-cURL.h"
 #include "Lua-utility.h"
 
-static int l_easy_readfunction(void *ptr, size_t size, size_t nmemb, void *stream) {
+static size_t l_easy_readfunction(void *ptr, size_t size, size_t nmemb, void *stream) {
   lua_State* L = (lua_State*)stream;
   size_t n;
   int old_top = lua_gettop(L);
@@ -36,13 +36,13 @@ static int l_easy_readfunction(void *ptr, size_t size, size_t nmemb, void *strea
   lua_call(L, 1, 1);
   str = lua_tolstring(L, -1, &n);
   if (n > nmemb*size)
-    luaL_error(L, "String returned from readfunction is too long (%d)", n);
+    luaL_error(L, "string returned from readfunction is too long (%d)", n);
   memcpy(ptr, str, n);
   lua_settop(L, old_top);
   return n;
 }
 
-static int l_easy_writefunction(void *ptr, size_t size, size_t nmemb, void *stream) {
+static size_t l_easy_writefunction(void *ptr, size_t size, size_t nmemb, void *stream) {
   lua_State* L = (lua_State*)stream;
 
   lua_getfield(L, -1, "writefunction");
@@ -51,7 +51,7 @@ static int l_easy_writefunction(void *ptr, size_t size, size_t nmemb, void *stre
   return nmemb*size;
 }
 
-static int l_easy_headerfunction(void *ptr, size_t size, size_t nmemb, void *stream) {
+static size_t l_easy_headerfunction(void *ptr, size_t size, size_t nmemb, void *stream) {
   lua_State* L = (lua_State*)stream;
   lua_getfield(L, -1, "headerfunction");
   lua_pushlstring(L, (char*) ptr, nmemb * size);

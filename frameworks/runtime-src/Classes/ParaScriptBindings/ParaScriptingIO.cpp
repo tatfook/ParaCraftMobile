@@ -366,6 +366,10 @@ namespace ParaScripting
 					memcpy(pData, pTextureImage, nSize);
 
 					file.m_pFile.reset(new CParaFile((char*)pFileBuffer, nSize + nHeaderSize, true));
+
+					// must be to delete, because bCopyBuffer is true
+					delete[] pFileBuffer;
+
 					file.m_pFile->SetFilePointer(0, FILE_BEGIN);
 					file.m_pFile->TakeBufferOwnership();
 					SAFE_DELETE_ARRAY(pTextureImage);
@@ -1058,17 +1062,31 @@ namespace ParaScripting
 	{
 		if (IsValid())
 		{
-			const char* text = GetText2(0, -1).c_str();
+			const std::string& output = GetText2(0, -1);
+			const char* text = output.c_str();
 			if (text)
 			{
+				// https://en.wikipedia.org/wiki/Byte_order_mark
 				// encoding is escaped.
 				if ((((byte)text[0]) == 0xEF) && (((byte)text[1]) == 0xBB) && (((byte)text[2]) == 0xBF))
 				{
+					// UTF-8[t 1]	EF BB BF
 					text += 3;
 				}
 				else if ( ((((byte)text[0]) == 0xFF) && (((byte)text[1]) == 0xFE)) || ((((byte)text[0]) == 0xFE) && (((byte)text[1]) == 0xFF)))
 				{
+					// UTF - 16 (BigEndian)    FE FF
+					// UTF - 16 (LittleEndian) FF FE
 					text += 2;
+					std::u16string input;
+					input.resize((output.size() - 2) / 2);
+					memcpy((char*)(&(input[0])), text, input.size() * 2);
+					
+					m_sTempBuffer.clear();
+					if (StringHelper::UTF16ToUTF8(input, m_sTempBuffer))
+					{
+						return m_sTempBuffer.c_str();
+					}
 				}
 			}
 			return text;
@@ -1089,7 +1107,10 @@ namespace ParaScripting
 			if(nCount>0)
 			{
 				m_sTempBuffer.resize(nCount);
-				memcpy((char*)(&(m_sTempBuffer[0])), m_pFile->getBuffer()+fromPos, nCount);
+				int nOldPos = m_pFile->getPos();
+				m_pFile->seek(fromPos);
+				m_pFile->read((char*)(&(m_sTempBuffer[0])), nCount);
+				m_pFile->seek(nOldPos);
 			}
 		}
 		return m_sTempBuffer;
@@ -1109,8 +1130,7 @@ namespace ParaScripting
 			if (nCount > 0)
 			{
 				m_sTempBuffer.resize(nCount);
-				memcpy((char*)(&(m_sTempBuffer[0])), m_pFile->getBuffer() + fromPos, nCount);
-				m_pFile->seekRelative(nCount);
+				m_pFile->read((char*)(&(m_sTempBuffer[0])), nCount);
 			}
 		}
 		return m_sTempBuffer;
@@ -1141,7 +1161,7 @@ namespace ParaScripting
 	{
 		if(IsValid())
 		{
-			m_pFile->seek(offset);
+			m_pFile->seekRelative(offset);
 		}
 	}
 
@@ -1724,7 +1744,7 @@ namespace ParaScripting
 				if((int)file.getSize()> 0)
 				{
 					sCode.resize((int)file.getSize());
-					memcpy(&(sCode[0]), file.getBuffer(), (int)file.getSize());
+					file.read(&(sCode[0]), (int)file.getSize());
 				}
 #ifdef USE_TINYXML2
 				namespace TXML = tinyxml2;

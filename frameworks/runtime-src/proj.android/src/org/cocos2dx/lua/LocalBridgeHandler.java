@@ -56,6 +56,7 @@ public class LocalBridgeHandler extends Handler {
 		return instance;
 	}
 	public static void makeResponse(int callback,String key, byte[] byteArr,String tag){
+		Log.d("lllllllll", "hhhhhhhh");
 		Log.d(key,tag);
 	    LocalBridgeHandler.callLuaFunctionWithString(callback,key,byteArr,byteArr.length);
 	}

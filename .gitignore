@@ -138,7 +138,3 @@ publish/
 *.mo
 
 
-/frameworks/*.zip
-/frameworks/.vs
-/frameworks/cocos2d-x-3.2
-/frameworks/cocos2d-x-3.6

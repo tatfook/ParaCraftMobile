@@ -20,10 +20,6 @@
 * TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ******************************************************************************/
-
-// #include <curl/curl.h>
-
-
 #include "Lua-cURL.h"
 #include "Lua-cURL-share.h"
 #include "Lua-utility.h"

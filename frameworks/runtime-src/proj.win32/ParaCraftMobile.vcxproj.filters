@@ -127,6 +127,9 @@
     <Filter Include="Externals\tinyxml">
       <UniqueIdentifier>{346cc909-e3d2-4954-83b9-a7b0a71740e4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="WebSocket">
+      <UniqueIdentifier>{dc186c44-5adf-45cc-863d-52f134a75fa2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h">
@@ -1779,6 +1782,30 @@
     <ClInclude Include="..\Classes\util\lua_pack.h">
       <Filter>util</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\WebSocket\ByteBuffer.h">
+      <Filter>WebSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\WebSocket\WebSocketCommon.h">
+      <Filter>WebSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\WebSocket\WebSocketFrame.h">
+      <Filter>WebSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\WebSocket\WebSocketReader.h">
+      <Filter>WebSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\WebSocket\WebSocketWriter.h">
+      <Filter>WebSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Core\NPLPackageConfig.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\XFileCharModelExporter.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParaXModel\XFileExporter.h">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp">
@@ -3169,6 +3196,27 @@
     </ClCompile>
     <ClCompile Include="..\Classes\util\lua_pack.c">
       <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\WebSocket\ByteBuffer.cpp">
+      <Filter>WebSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\WebSocket\WebSocketFrame.cpp">
+      <Filter>WebSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\WebSocket\WebSocketReader.cpp">
+      <Filter>WebSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\WebSocket\WebSocketWriter.cpp">
+      <Filter>WebSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Core\NPLPackageConfig.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\XFileCharModelExporter.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParaXModel\XFileExporter.cpp">
+      <Filter>3dengine\ParaXModel</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

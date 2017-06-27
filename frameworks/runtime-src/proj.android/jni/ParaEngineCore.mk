@@ -20,6 +20,11 @@ MY_MATH_FILES := $(wildcard $(LOCAL_PATH)/../../Classes/math/*.cpp)
 LOCAL_SRC_FILES += $(MY_MATH_FILES)
 
 ##################################
+# WebSocket
+MY_WEBSOCKET_FILES := $(wildcard $(LOCAL_PATH)/../../Classes/WebSocket/*.cpp)
+LOCAL_SRC_FILES += $(MY_WEBSOCKET_FILES)
+
+##################################
 # Core
 MY_CORE_FILES := $(wildcard $(LOCAL_PATH)/../../Classes/Core/*.cpp)
 LOCAL_SRC_FILES += $(MY_CORE_FILES)
@@ -92,6 +97,7 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes \
 					$(LOCAL_PATH)/../../Classes/Core \
 					$(LOCAL_PATH)/../../Classes/IO \
 					$(LOCAL_PATH)/../../Classes/util \
+					$(LOCAL_PATH)/../../Classes/WebSocket \
 					$(LOCAL_PATH)/../../Classes/NPL \
 					$(LOCAL_PATH)/../../Classes/ParaScriptBindings \
 					$(LOCAL_PATH)/../../Classes/Engine \

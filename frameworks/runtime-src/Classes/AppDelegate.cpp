@@ -18,14 +18,16 @@
 #include "ParaScriptBindings/local_bridge_manual.h"
 #include "AutoUpdate/AutoUpdater.h"
 #include "ParaXModel/FBXParser.h"
+
+#include <regex>
 using namespace NPL;
 /** define this if you want to use cocos API with NPL. If you just use NPL, undefine this. */
 // #define USE_COCOS_LUA_ENGINE_AS_MAIN_NPL_STATE
 
-AppDelegate::AppDelegate()
+AppDelegate::AppDelegate(std::string worldUrl)
 	:m_sScriptSearchPath("src")
 {
-	
+	m_worldUrl = worldUrl;
 }
 
 AppDelegate::~AppDelegate()
@@ -67,8 +69,33 @@ void ParaEngine::AppDelegate::CreateParaEngineApp()
 		configFile.GetNextAttribute("cmdline", sCmdLine);
 		configFile.close();
 	}
-	if (sCmdLine.empty())
+	if (!sCmdLine.empty())
+	{
+		// concat the world url if there is any
+		if (!m_worldUrl.empty())
+		{
+			//try {
+			//	std::regex re("paracraft://cmd/loadworld (.*)");
+			//	std::smatch match;
+			//	if (std::regex_search(m_worldUrl, match, re) && match.size() > 1)
+			//	{
+			//		OUTPUT_LOG("matched");
+			//		std::string url = match.str(1);
+			//		sCmdLine += " world=\"" + url + "\"";
+			//		OUTPUT_LOG(sCmdLine.c_str());
+			//	}
+			//}
+			//catch (std::regex_error& e) {
+			//}
+			// Regex match does not work here, use simple substring instead
+			std::string url = m_worldUrl.substr(26);
+			sCmdLine += " world=\"" + url + "\"";
+		}
+	}
+	else
+	{
 		GetCommandLine(sCmdLine);
+	}		
 	m_pParaEngineApp.reset(new CParaEngineApp(sCmdLine.c_str()));
 }
 
@@ -197,6 +224,7 @@ void AppDelegate::InitSearchPath()
 	cocos2d::FileUtils::getInstance()->addSearchPath(GetScriptSearchPath().c_str());
 #ifdef ANDROID
 	// on android: the preferred writable path is sdcard 
+	//OUTPUT_LOG("set writable path");
 	const std::string writable_path = "/mnt/sdcard/paracraft/";
 	ParaEngine::CParaFile::SetWritablePath(writable_path);
 #endif

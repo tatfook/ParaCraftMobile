@@ -5,6 +5,6 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
-	<classpathentry kind="lib" path="/libcocos2dx/bin/classes.jar"/>
+	<classpathentry kind="lib" path="D:/ParaCraftMobile/frameworks/cocos2d-x/cocos/platform/android/java/bin/classes.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
